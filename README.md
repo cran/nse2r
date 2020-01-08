@@ -8,6 +8,8 @@
 <!-- badges: start -->
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nse2r)](https://cran.r-project.org/package=nse2r)
+[![cran
+checks](https://cranchecks.info/badges/summary/nse2r)](https://cran.r-project.org/web/checks/check_results_nse2r.html)
 [![Travis-CI Build
 Status](https://travis-ci.org/rsquaredacademy/nse2r.svg?branch=master)](https://travis-ci.org/rsquaredacademy/nse2r)
 [![AppVeyor Build
@@ -16,16 +18,17 @@ Status](https://ci.appveyor.com/api/projects/status/github/rsquaredacademy/nse2r
 Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nse2r/master.svg)](https://codecov.io/github/rsquaredacademy/nse2r?branch=master)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/nse2r)](https://cran.r-project.org/package=nse2r)
 <!-- badges: end -->
 
 ## Overview
 
 [NSE](https://www.nseindia.com/) (National Stock Exchange) is the
 leading stock exchange of India, located in the city of Mumbai. While
-users can manually download data from NSE through a browser and then
-importing this data into R becomes cumbersome. The nse2r R package
-implements the retrieval of data from NSE and aims to reduce the
-pre-processing steps needed in analyzing such data.
+users can manually download data from NSE through a browser, importing
+this data into R becomes cumbersome. The nse2r R package implements the
+retrieval of data from NSE and aims to reduce the pre-processing steps
+needed in analyzing such data.
 
 nse2r is inspired by and a port of the Python package
 [nsetools](https://nsetools.readthedocs.io/en/latest/). The authors and
@@ -92,16 +95,16 @@ nse_index_quote()
 #> # A tibble: 55 x 4
 #>    index_name        last_traded_price change percent_change
 #>    <chr>                         <dbl>  <dbl>          <dbl>
-#>  1 NIFTY 50 Pre Open           11939.   17.6            0.15
-#>  2 NIFTY 50                    11948.   26.2            0.22
-#>  3 NIFTY NEXT 50               27816   -38.0           -0.14
-#>  4 NIFTY100 LIQ 15              3668.   15.5            0.42
-#>  5 NIFTY BANK                  31327.  -14.8           -0.05
-#>  6 INDIA VIX                      13.7   0.04           0.31
-#>  7 NIFTY 100                   12046.   20.6            0.17
-#>  8 NIFTY 500                    9684.   14.4            0.15
-#>  9 NIFTY MIDCAP 100            16774.   42.2            0.25
-#> 10 NIFTY MIDCAP 50              4577.   20.9            0.46
+#>  1 NIFTY 50 Pre Open           12079.   86.0            0.72
+#>  2 NIFTY 50                    12053.   59.9            0.5 
+#>  3 NIFTY NEXT 50               28101.  206.             0.74
+#>  4 NIFTY100 LIQ 15              3743.   10.3            0.28
+#>  5 NIFTY BANK                  31399.  162.             0.52
+#>  6 INDIA VIX                      14.6  -0.23          -1.53
+#>  7 NIFTY 100                   12155.   64.4            0.53
+#>  8 NIFTY 500                    9805.   58              0.6 
+#>  9 NIFTY MIDCAP 100            17022.  117.             0.69
+#> 10 NIFTY MIDCAP 50              4675.   35.4            0.76
 #> # ... with 45 more rows
 
 # retain original column names as returned by NSE
@@ -109,16 +112,16 @@ nse_index_quote(clean_names = FALSE)
 #> # A tibble: 55 x 4
 #>    name              lastPrice change pChange
 #>    <chr>                 <dbl>  <dbl>   <dbl>
-#>  1 NIFTY 50 Pre Open   11939.   17.6     0.15
-#>  2 NIFTY 50            11948.   26.2     0.22
-#>  3 NIFTY NEXT 50       27816   -38.0    -0.14
-#>  4 NIFTY100 LIQ 15      3668.   15.5     0.42
-#>  5 NIFTY BANK          31327.  -14.8    -0.05
-#>  6 INDIA VIX              13.7   0.04    0.31
-#>  7 NIFTY 100           12046.   20.6     0.17
-#>  8 NIFTY 500            9684.   14.4     0.15
-#>  9 NIFTY MIDCAP 100    16774.   42.2     0.25
-#> 10 NIFTY MIDCAP 50      4577.   20.9     0.46
+#>  1 NIFTY 50 Pre Open   12079.   86.0     0.72
+#>  2 NIFTY 50            12053.   59.9     0.5 
+#>  3 NIFTY NEXT 50       28101.  206.      0.74
+#>  4 NIFTY100 LIQ 15      3743.   10.3     0.28
+#>  5 NIFTY BANK          31399.  162.      0.52
+#>  6 INDIA VIX              14.6  -0.23   -1.53
+#>  7 NIFTY 100           12155.   64.4     0.53
+#>  8 NIFTY 500            9805.   58       0.6 
+#>  9 NIFTY MIDCAP 100    17022.  117.      0.69
+#> 10 NIFTY MIDCAP 50      4675.   35.4     0.76
 #> # ... with 45 more rows
 ```
 
@@ -131,16 +134,16 @@ nse_stock_top_gainers()
 #> # A tibble: 10 x 12
 #>    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
 #>    <chr>  <chr>  <date>           <chr>                 <dbl>      <dbl>
-#>  1 ADANI~ EQ     2019-07-26       Annual General ~       368.      378. 
-#>  2 HDFC   EQ     2019-07-19       Annual General ~      2263.     2310  
-#>  3 BPCL   EQ     2019-08-21       Dividend - Rs 8~       487.      500. 
-#>  4 MARUTI EQ     2019-08-14       Dividend - Rs 8~      7007      7108  
-#>  5 AXISB~ EQ     2019-07-04       Annual General ~       713.      732. 
-#>  6 JSWST~ EQ     2019-07-08       Annual General ~       253       259. 
-#>  7 TATAS~ EQ     2019-07-04       Annual General ~       403       412. 
-#>  8 YESBA~ EQ     2019-06-03       Annual General ~        56        58.8
-#>  9 UPL    EQ     2019-07-02       Bonus 1:2              565       574. 
-#> 10 IOC    EQ     2019-08-21       Annual General ~       124.      126. 
+#>  1 VEDL   EQ     2019-07-04       Annual General ~       153.       157.
+#>  2 ZEEL   EQ     2019-07-15       Annual General ~       265        271.
+#>  3 ULTRA~ EQ     2019-07-10       Annual General ~      4200.      4254 
+#>  4 UPL    EQ     2019-07-02       Bonus 1:2              585.       604 
+#>  5 RELIA~ EQ     2019-08-02       Annual General ~      1519       1534.
+#>  6 HDFCB~ EQ     2019-09-19       Face Value Spli~      1259.      1271.
+#>  7 SUNPH~ EQ     2019-08-20       Annual General ~       441.       448 
+#>  8 NTPC   EQ     2019-08-13       Dividend - Rs 2~       119.       122.
+#>  9 HDFC   EQ     2019-07-19       Annual General ~      2401.      2429.
+#> 10 ASIAN~ EQ     2019-10-30       Interim Dividen~      1711       1740.
 #> # ... with 6 more variables: low_price <dbl>, last_traded_price <dbl>,
 #> #   prev_close_price <dbl>, percent_change <dbl>, traded_quantity <dbl>,
 #> #   turnover_in_lakhs <dbl>
@@ -150,16 +153,16 @@ nse_stock_top_gainers(clean_names = FALSE)
 #> # A tibble: 10 x 12
 #>    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice
 #>    <chr>  <chr>  <date>           <chr>                <dbl>     <dbl>
-#>  1 ADANI~ EQ     2019-07-26       Annual General ~      368.     378. 
-#>  2 HDFC   EQ     2019-07-19       Annual General ~     2263.    2310  
-#>  3 BPCL   EQ     2019-08-21       Dividend - Rs 8~      487.     500. 
-#>  4 MARUTI EQ     2019-08-14       Dividend - Rs 8~     7007     7108  
-#>  5 AXISB~ EQ     2019-07-04       Annual General ~      713.     732. 
-#>  6 JSWST~ EQ     2019-07-08       Annual General ~      253      259. 
-#>  7 TATAS~ EQ     2019-07-04       Annual General ~      403      412. 
-#>  8 YESBA~ EQ     2019-06-03       Annual General ~       56       58.8
-#>  9 UPL    EQ     2019-07-02       Bonus 1:2             565      574. 
-#> 10 IOC    EQ     2019-08-21       Annual General ~      124.     126. 
+#>  1 VEDL   EQ     2019-07-04       Annual General ~      153.      157.
+#>  2 ZEEL   EQ     2019-07-15       Annual General ~      265       271.
+#>  3 ULTRA~ EQ     2019-07-10       Annual General ~     4200.     4254 
+#>  4 UPL    EQ     2019-07-02       Bonus 1:2             585.      604 
+#>  5 RELIA~ EQ     2019-08-02       Annual General ~     1519      1534.
+#>  6 HDFCB~ EQ     2019-09-19       Face Value Spli~     1259.     1271.
+#>  7 SUNPH~ EQ     2019-08-20       Annual General ~      441.      448 
+#>  8 NTPC   EQ     2019-08-13       Dividend - Rs 2~      119.      122.
+#>  9 HDFC   EQ     2019-07-19       Annual General ~     2401.     2429.
+#> 10 ASIAN~ EQ     2019-10-30       Interim Dividen~     1711      1740.
 #> # ... with 6 more variables: lowPrice <dbl>, ltp <dbl>,
 #> #   previousPrice <dbl>, netPrice <dbl>, tradedQuantity <dbl>,
 #> #   turnoverInLakhs <dbl>
@@ -169,50 +172,38 @@ nse_stock_top_gainers(clean_names = FALSE)
 
 ``` r
 nse_stock_year_high()
-#> # A tibble: 16 x 10
-#>    symbol symbol_desc date       new_high    year last_traded_pri~
-#>    <chr>  <chr>       <date>        <dbl>   <dbl>            <dbl>
-#>  1 ADANI~ Adani Tran~ 2019-12-02   345.    345.             333.  
-#>  2 AGROP~ Agro Phos ~ 2019-12-06   140.    140.             140.  
-#>  3 BFUTI~ BF Utiliti~ 2019-11-05   336.    336.             336.  
-#>  4 BIOFI~ Biofil Che~ 2019-12-06    11.2    11.2             11.2 
-#>  5 COROM~ Coromandel~ 2019-03-29   528     528              514.  
-#>  6 CREAT~ Creative P~ 2019-12-06    94      94               86.9 
-#>  7 CURAT~ Cura Techn~ 2019-12-06     1.85    1.85             1.85
-#>  8 GUJGA~ Gujarat Ga~ 2019-12-06   232.    232.             230   
-#>  9 IIFLS~ IIFL Secur~ 2019-12-06    34.0    34.0             34.0 
-#> 10 ISEC   ICICI Secu~ 2019-12-06   365.    365.             358.  
-#> 11 KIRLF~ Kirloskar ~ 2019-11-13    67.6    67.6             61.0 
-#> 12 SRF    SRF Limited 2019-11-20  3286.   3286.            3258   
-#> 13 UVSL   Uttam Valu~ 2019-12-06     0.15    0.15             0.15
-#> 14 VIKAS~ Vikas Prop~ 2019-12-06     5.4     5.4              5.4 
-#> 15 VISES~ Visesh Inf~ 2019-12-06     0.1     0.1              0.05
-#> 16 XCHAN~ Xchanging ~ 2019-11-04    60.2    60.2             58.1 
-#> # ... with 4 more variables: prev_high <dbl>, prev_close <dbl>,
+#> # A tibble: 27 x 10
+#>    symbol symbol_desc date       new_high   year last_traded_pri~ prev_high
+#>    <chr>  <chr>       <date>        <dbl>  <dbl>            <dbl>     <dbl>
+#>  1 AAVAS  Aavas Fina~ 2020-01-03   2079   2079             1970.     2050. 
+#>  2 ADANI~ Adani Gree~ 2020-01-06    211.   211.             211.      202. 
+#>  3 ALKYL~ Alkyl Amin~ 2020-01-02   1250   1250             1234      1199  
+#>  4 ASTER~ Aster DM H~ 2020-01-01    175.   175.             163.      171. 
+#>  5 BALRA~ Balrampur ~ 2020-01-02    195    195              186.      189. 
+#>  6 BRIGA~ Brigade En~ 2019-11-08    232.   232.             223.      224. 
+#>  7 DIXON  Dixon Tech~ 2019-12-27   4315.  4315.            4240      4055  
+#>  8 DWARK~ Dwarikesh ~ 2020-01-02     42     42               41.7      39.8
+#>  9 EIDPA~ EID Parry ~ 2019-01-16    235    235              230.      233. 
+#> 10 GMRIN~ GMR Infras~ 2020-01-03     23.8   23.8             23.2      23.4
+#> # ... with 17 more rows, and 3 more variables: prev_close <dbl>,
 #> #   change <dbl>, percent_change <dbl>
 
 # retain original column names as returned by NSE
 nse_stock_year_high(clean_names = FALSE)
-#> # A tibble: 16 x 10
-#>    symbol symbolDesc dt           value    year     ltp value_old    prev
-#>    <chr>  <chr>      <date>       <dbl>   <dbl>   <dbl>     <dbl>   <dbl>
-#>  1 ADANI~ Adani Tra~ 2019-12-02  345.    345.    333.      341.    319.  
-#>  2 AGROP~ Agro Phos~ 2019-12-06  140.    140.    140.      139.    139.  
-#>  3 BFUTI~ BF Utilit~ 2019-11-05  336.    336.    336.      324.    305.  
-#>  4 BIOFI~ Biofil Ch~ 2019-12-06   11.2    11.2    11.2      10.7    10.7 
-#>  5 COROM~ Coromande~ 2019-03-29  528     528     514.      517     496.  
-#>  6 CREAT~ Creative ~ 2019-12-06   94      94      86.9      89.4    83.6 
-#>  7 CURAT~ Cura Tech~ 2019-12-06    1.85    1.85    1.85      1.85    1.85
-#>  8 GUJGA~ Gujarat G~ 2019-12-06  232.    232.    230       228.    227.  
-#>  9 IIFLS~ IIFL Secu~ 2019-12-06   34.0    34.0    34.0      32.4    32.4 
-#> 10 ISEC   ICICI Sec~ 2019-12-06  365.    365.    358.      360.    356.  
-#> 11 KIRLF~ Kirloskar~ 2019-11-13   67.6    67.6    61.0      66.0    61.2 
-#> 12 SRF    SRF Limit~ 2019-11-20 3286.   3286.   3258      3273.   3230.  
-#> 13 UVSL   Uttam Val~ 2019-12-06    0.15    0.15    0.15      0.15    0.1 
-#> 14 VIKAS~ Vikas Pro~ 2019-12-06    5.4     5.4     5.4       5.3     5.3 
-#> 15 VISES~ Visesh In~ 2019-12-06    0.1     0.1     0.05      0.1     0.1 
-#> 16 XCHAN~ Xchanging~ 2019-11-04   60.2    60.2    58.1      58.6    55.8 
-#> # ... with 2 more variables: change <dbl>, pChange <dbl>
+#> # A tibble: 27 x 10
+#>    symbol symbolDesc dt          value   year    ltp value_old   prev
+#>    <chr>  <chr>      <date>      <dbl>  <dbl>  <dbl>     <dbl>  <dbl>
+#>  1 AAVAS  Aavas Fin~ 2020-01-03 2079   2079   1970.     2050.  1990. 
+#>  2 ADANI~ Adani Gre~ 2020-01-06  211.   211.   211.      202.   201. 
+#>  3 ALKYL~ Alkyl Ami~ 2020-01-02 1250   1250   1234      1199   1142. 
+#>  4 ASTER~ Aster DM ~ 2020-01-01  175.   175.   163.      171.   166. 
+#>  5 BALRA~ Balrampur~ 2020-01-02  195    195    186.      189.   183. 
+#>  6 BRIGA~ Brigade E~ 2019-11-08  232.   232.   223.      224.   218. 
+#>  7 DIXON  Dixon Tec~ 2019-12-27 4315.  4315.  4240      4055   3959. 
+#>  8 DWARK~ Dwarikesh~ 2020-01-02   42     42     41.7      39.8   38.4
+#>  9 EIDPA~ EID Parry~ 2019-01-16  235    235    230.      233.   224. 
+#> 10 GMRIN~ GMR Infra~ 2020-01-03   23.8   23.8   23.2      23.4   22.6
+#> # ... with 17 more rows, and 2 more variables: change <dbl>, pChange <dbl>
 ```
 
 ##### Most actively traded stocks in a month
@@ -222,18 +213,18 @@ nse_stock_most_traded()
 #> # A tibble: 12 x 6
 #>    security share_turnover traded_quantity no_of_trades avg_daily_turno~
 #>    <chr>             <dbl>           <dbl>        <dbl>            <dbl>
-#>  1 ICICI B~           4.65            7758      4878739            1939.
-#>  2 Yes Ban~           4.29           52626     11184742            1787.
-#>  3 Indiabu~           4              12930     10805671            1667.
-#>  4 Relianc~           3.02            1670      3665877            1259.
-#>  5 Zee Ent~           3               7991      5228767            1250.
-#>  6 State B~           2.9             7471      4682688            1211.
-#>  7 Bharti ~           2.22            4447      3632503             924.
-#>  8 HDFC Li~           2.04             762      2883349             853.
-#>  9 Infosys~           1.88            2223      3267771             783.
-#> 10 Tata St~           1.83            3759      3038374             764.
-#> 11 TOTAL o~          29.8           101637     53268481           12438.
-#> 12 TOTAL            100             483353    259778999           41713.
+#>  1 Yes Ban~           4.38           57140     11058530            1423.
+#>  2 Relianc~           3.93            1715      3803882            1276.
+#>  3 Indiabu~           3.91            9077      8060572            1271.
+#>  4 State B~           3.43            7114      4624946            1114.
+#>  5 Tata Co~           2.69             866      2891204             875.
+#>  6 ICICI B~           2.51            3204      2969145             814.
+#>  7 HDFC Li~           2.33             670      2510572             756.
+#>  8 Tata St~           2.26            3541      3008166             733.
+#>  9 HDFC Ba~           2.18            1170      2969084             707.
+#> 10 Tata Mo~           2.07            8128      3536571             671.
+#> 11 TOTAL o~          29.7            92625     45432672            9640.
+#> 12 TOTAL            100             391115    223723721           32475.
 #> # ... with 1 more variable: turnover <dbl>
 
 # retain original column names as returned by NSE
@@ -241,18 +232,18 @@ nse_stock_most_traded(clean_names = FALSE)
 #> # A tibble: 12 x 6
 #>    security              sharetotal trdQty nooftrades avgdailyturn turnover
 #>    <chr>                      <dbl>  <dbl>      <dbl>        <dbl>    <dbl>
-#>  1 ICICI Bank Limited          4.65   7758    4878739        1939.   38780.
-#>  2 Yes Bank Limited            4.29  52626   11184742        1787.   35748.
-#>  3 Indiabulls Hsg Finan~       4     12930   10805671        1667.   33339.
-#>  4 Reliance Industries ~       3.02   1670    3665877        1259.   25186.
-#>  5 Zee Entertainment En~       3      7991    5228767        1250.   25005.
-#>  6 State Bank Of India         2.9    7471    4682688        1211.   24215.
-#>  7 Bharti Airtel Limited       2.22   4447    3632503         924.   18489.
-#>  8 HDFC Limited                2.04    762    2883349         853.   17058.
-#>  9 Infosys Limited             1.88   2223    3267771         783.   15658.
-#> 10 Tata Steel Limited          1.83   3759    3038374         764.   15288.
-#> 11 TOTAL of Top Ten sec~      29.8  101637   53268481       12438.  248767.
-#> 12 TOTAL                     100    483353  259778999       41713.  834252.
+#>  1 Yes Bank Limited            4.38  57140   11058530        1423.   29880.
+#>  2 Reliance Industries ~       3.93   1715    3803882        1276.   26799.
+#>  3 Indiabulls Hsg Fin L~       3.91   9077    8060572        1271.   26683.
+#>  4 State Bank of India         3.43   7114    4624946        1114.   23391.
+#>  5 Tata Consultancy Ser~       2.69    866    2891204         875.   18367.
+#>  6 ICICI Bank Limited          2.51   3204    2969145         814.   17098.
+#>  7 HDFC Limited                2.33    670    2510572         756.   15868.
+#>  8 Tata Steel Limited          2.26   3541    3008166         733.   15396.
+#>  9 HDFC Bank Limited           2.18   1170    2969084         707.   14848.
+#> 10 Tata Motors Limited         2.07   8128    3536571         671.   14100.
+#> 11 TOTAL of Top Ten sec~      29.7   92625   45432672        9640.  202431.
+#> 12 TOTAL                     100    391115  223723721       32475.  681983.
 ```
 
 ### Futures & Options
@@ -264,16 +255,16 @@ nse_fo_top_gainers()
 #> # A tibble: 10 x 12
 #>    symbol series last_corp_annou~ last_corp_annou~ open_price high_price
 #>    <chr>  <chr>  <date>           <chr>                 <dbl>      <dbl>
-#>  1 DISHTV EQ     2018-11-05       Interim Dividen~       12.6       14.4
-#>  2 SAIL   EQ     2019-08-22       Annual General ~       38.5       40.0
-#>  3 M&MFIN EQ     2019-07-15       Annual General ~      328.       339. 
-#>  4 JINDA~ EQ     2019-09-19       Annual General ~      141.       145. 
-#>  5 CHOLA~ EQ     2019-07-22       Annual General ~      302.       312. 
-#>  6 CENTU~ EQ     2019-10-11       Demerger              489        515. 
-#>  7 CANBK  EQ     2019-07-17       Annual General ~      208        216. 
-#>  8 JUBLF~ EQ     2019-09-16       Annual General ~     1579       1617  
-#>  9 ADANI~ EQ     2019-07-26       Annual General ~      368.       378. 
-#> 10 PFC    EQ     2019-08-20       Annual General ~      109.       113. 
+#>  1 RAMCO~ EQ     2019-07-31       Annual General ~      755        793  
+#>  2 SHREE~ EQ     2019-07-31       Dividend - Rs 3~    21097.     22050  
+#>  3 VEDL   EQ     2019-07-04       Annual General ~      153.       157. 
+#>  4 PFC    EQ     2019-08-20       Annual General ~      114        119. 
+#>  5 L&TFH  EQ     2019-07-19       Annual General ~      114        117  
+#>  6 MINDT~ EQ     2019-10-24       Interim Dividen~      823.       854  
+#>  7 INDIGO EQ     2019-08-19       Annual General ~     1327.      1384  
+#>  8 MOTHE~ EQ     2019-08-08       Annual General ~      143        147. 
+#>  9 GMRIN~ EQ     2019-09-05       Annual General ~       22.8       23.8
+#> 10 ZEEL   EQ     2019-07-15       Annual General ~      265        271. 
 #> # ... with 6 more variables: low_price <dbl>, last_traded_price <dbl>,
 #> #   prev_close_price <dbl>, percent_change <dbl>, traded_quantity <dbl>,
 #> #   turnover_in_lakhs <dbl>
@@ -283,16 +274,16 @@ nse_fo_top_gainers(clean_names = FALSE)
 #> # A tibble: 10 x 12
 #>    symbol series lastCorpAnnounc~ lastCorpAnnounc~ openPrice highPrice
 #>    <chr>  <chr>  <date>           <chr>                <dbl>     <dbl>
-#>  1 DISHTV EQ     2018-11-05       Interim Dividen~      12.6      14.4
-#>  2 SAIL   EQ     2019-08-22       Annual General ~      38.5      40.0
-#>  3 M&MFIN EQ     2019-07-15       Annual General ~     328.      339. 
-#>  4 JINDA~ EQ     2019-09-19       Annual General ~     141.      145. 
-#>  5 CHOLA~ EQ     2019-07-22       Annual General ~     302.      312. 
-#>  6 CENTU~ EQ     2019-10-11       Demerger             489       515. 
-#>  7 CANBK  EQ     2019-07-17       Annual General ~     208       216. 
-#>  8 JUBLF~ EQ     2019-09-16       Annual General ~    1579      1617  
-#>  9 ADANI~ EQ     2019-07-26       Annual General ~     368.      378. 
-#> 10 PFC    EQ     2019-08-20       Annual General ~     109.      113. 
+#>  1 RAMCO~ EQ     2019-07-31       Annual General ~     755       793  
+#>  2 SHREE~ EQ     2019-07-31       Dividend - Rs 3~   21097.    22050  
+#>  3 VEDL   EQ     2019-07-04       Annual General ~     153.      157. 
+#>  4 PFC    EQ     2019-08-20       Annual General ~     114       119. 
+#>  5 L&TFH  EQ     2019-07-19       Annual General ~     114       117  
+#>  6 MINDT~ EQ     2019-10-24       Interim Dividen~     823.      854  
+#>  7 INDIGO EQ     2019-08-19       Annual General ~    1327.     1384  
+#>  8 MOTHE~ EQ     2019-08-08       Annual General ~     143       147. 
+#>  9 GMRIN~ EQ     2019-09-05       Annual General ~      22.8      23.8
+#> 10 ZEEL   EQ     2019-07-15       Annual General ~     265       271. 
 #> # ... with 6 more variables: lowPrice <dbl>, ltp <dbl>,
 #> #   previousPrice <dbl>, netPrice <dbl>, tradedQuantity <dbl>,
 #> #   turnoverInLakhs <dbl>
@@ -307,18 +298,18 @@ nse_preopen_nifty_bank()
 #> # A tibble: 12 x 17
 #>    symbol series corp_action_date corp_action  price change percent_change
 #>    <chr>  <chr>  <date>           <chr>        <dbl>  <dbl>          <dbl>
-#>  1 INDUS~ EQ     NA               <NA>        1457    -8.85         -0.6  
-#>  2 AXISB~ EQ     NA               <NA>         713.   -4.15         -0.580
-#>  3 SBIN   EQ     NA               <NA>         319.   -1.05         -0.33 
-#>  4 ICICI~ EQ     NA               <NA>         524.   -0.75         -0.14 
-#>  5 IDFCF~ EQ     NA               <NA>          43.2  -0.05         -0.12 
-#>  6 FEDER~ EQ     NA               <NA>          84.0  -0.1          -0.12 
-#>  7 HDFCB~ EQ     2019-09-19       FACE VALUE~ 1250.    3.45          0.28 
-#>  8 KOTAK~ EQ     NA               <NA>        1678.    3.65          0.22 
-#>  9 RBLBA~ EQ     NA               <NA>         339.    0.6           0.18 
-#> 10 PNB    EQ     NA               <NA>          60.3   0.1           0.17 
-#> 11 BANKB~ EQ     NA               <NA>          97.0   0             0    
-#> 12 YESBA~ EQ     NA               <NA>          56     0             0    
+#>  1 BANKB~ EQ     NA               <NA>          97.6   1.8            1.88
+#>  2 RBLBA~ EQ     NA               <NA>         343     6.15           1.83
+#>  3 SBIN   EQ     NA               <NA>         324.    5.45           1.71
+#>  4 HDFCB~ EQ     NA               <NA>        1259.   18.0            1.45
+#>  5 INDUS~ EQ     NA               <NA>        1488.   19.0            1.3 
+#>  6 YESBA~ EQ     NA               <NA>          45.7   0.55           1.22
+#>  7 PNB    EQ     NA               <NA>          62.1   0.7            1.14
+#>  8 ICICI~ EQ     NA               <NA>         531.    5.6            1.07
+#>  9 IDFCF~ EQ     NA               <NA>          44     0.35           0.8 
+#> 10 FEDER~ EQ     NA               <NA>          87.8   0.7            0.8 
+#> 11 AXISB~ EQ     NA               <NA>         728     4.75           0.66
+#> 12 KOTAK~ EQ     NA               <NA>        1661.    8.5            0.51
 #> # ... with 10 more variables: prev_close <dbl>, quantity <dbl>,
 #> #   value <dbl>, mkt_cap <dbl>, year_high <dbl>, year_low <dbl>,
 #> #   sum_val <dbl>, sum_quantity <dbl>, fin_quantity <dbl>,
@@ -327,18 +318,18 @@ nse_preopen_nifty_bank()
 # retain original column names as returned by NSE
 nse_preopen_nifty(clean_names = FALSE)
 #> # A tibble: 50 x 17
-#>    symbol series xDt        caAct   iep    chn perChn  pCls trdQnty  iVal
-#>    <chr>  <chr>  <date>     <chr> <dbl>  <dbl>  <dbl> <dbl>   <dbl> <dbl>
-#>  1 MARUTI EQ     NA         <NA>  7007  120.    1.75  6887.    5594 392. 
-#>  2 INFRA~ EQ     NA         <NA>   258   -1.7  -0.65   260.   24591  63.4
-#>  3 INDUS~ EQ     NA         <NA>  1457   -8.85 -0.6   1466.    3829  55.8
-#>  4 AXISB~ EQ     NA         <NA>   713.  -4.15 -0.580  718.   22777 162. 
-#>  5 JSWST~ EQ     NA         <NA>   253   -1.1  -0.43   254.    5663  14.3
-#>  6 SBIN   EQ     NA         <NA>   319.  -1.05 -0.33   320   112019 357. 
-#>  7 BPCL   EQ     NA         <NA>   487.  -1.05 -0.21   488.   13495  65.8
-#>  8 ITC    EQ     NA         <NA>   243   -0.35 -0.14   243.   20211  49.1
-#>  9 ICICI~ EQ     NA         <NA>   524.  -0.75 -0.14   525.   32809 172. 
-#> 10 WIPRO  EQ     NA         <NA>   241.  -0.2  -0.08   241     7231  17.4
+#>    symbol series xDt        caAct    iep   chn perChn   pCls trdQnty   iVal
+#>    <chr>  <chr>  <date>     <chr>  <dbl> <dbl>  <dbl>  <dbl>   <dbl>  <dbl>
+#>  1 SBIN   EQ     NA         <NA>   324.   5.45   1.71  319    119226  387. 
+#>  2 VEDL   EQ     NA         <NA>   153.   2.25   1.49  151.    29896   45.7
+#>  3 BAJFI~ EQ     NA         <NA>  4055   58.3    1.46 3997.     5803  235. 
+#>  4 HDFCB~ EQ     NA         <NA>  1259.  18.0    1.45 1241.    95521 1203. 
+#>  5 ZEEL   EQ     NA         <NA>   265    3.5    1.34  262.    37585   99.6
+#>  6 INDUS~ EQ     NA         <NA>  1488.  19.0    1.3  1469.     8382  125. 
+#>  7 YESBA~ EQ     NA         <NA>    45.7  0.55   1.22   45.2  186780   85.4
+#>  8 RELIA~ EQ     NA         <NA>  1519   17.5    1.17 1502.    36027  547. 
+#>  9 TITAN  EQ     NA         <NA>  1171.  12.4    1.07 1159.     7974   93.4
+#> 10 ICICI~ EQ     NA         <NA>   531.   5.6    1.07  526.    32942  175. 
 #> # ... with 40 more rows, and 7 more variables: mktCap <dbl>, yHigh <dbl>,
 #> #   yLow <dbl>, sumVal <dbl>, sumQnty <dbl>, finQnty <dbl>,
 #> #   sumfinQnty <dbl>
@@ -351,16 +342,16 @@ nse_advances_declines()
 #> # A tibble: 57 x 4
 #>    index_name      advances declines unchanged
 #>    <chr>              <dbl>    <dbl>     <dbl>
-#>  1 NIFTY 50              31       19         0
-#>  2 NIFTY NEXT 50         21       29         0
-#>  3 NIFTY IT               5        5         0
-#>  4 NIFTY BANK             5        7         0
-#>  5 NIFTY MIDCAP 50       34       16         0
+#>  1 NIFTY 50              33       17         0
+#>  2 NIFTY NEXT 50         34       15         1
+#>  3 NIFTY IT               8        2         0
+#>  4 NIFTY BANK             7        4         1
+#>  5 NIFTY MIDCAP 50       36       12         2
 #>  6 NIFTY INFRA           18       12         0
-#>  7 NIFTY REALTY           3        7         0
-#>  8 NIFTY ENERGY           8        2         0
-#>  9 NIFTY FMCG             3       12         0
-#> 10 NIFTY MNC             11       19         0
+#>  7 NIFTY REALTY           9        1         0
+#>  8 NIFTY ENERGY           3        7         0
+#>  9 NIFTY FMCG            10        5         0
+#> 10 NIFTY MNC             19       11         0
 #> # ... with 47 more rows
 
 # retain original column names as returned by NSE
@@ -368,16 +359,15 @@ nse_advances_declines(clean_names = FALSE)
 #> # A tibble: 57 x 4
 #>    indice          advances declines unchanged
 #>    <chr>              <dbl>    <dbl>     <dbl>
-#>  1 NIFTY 50              31       19         0
-#>  2 NIFTY NEXT 50         21       29         0
-#>  3 NIFTY IT               5        5         0
-#>  4 NIFTY BANK             5        7         0
-#>  5 NIFTY MIDCAP 50       34       16         0
+#>  1 NIFTY 50              33       17         0
+#>  2 NIFTY NEXT 50         34       15         1
+#>  3 NIFTY IT               8        2         0
+#>  4 NIFTY BANK             7        4         1
+#>  5 NIFTY MIDCAP 50       36       12         2
 #>  6 NIFTY INFRA           18       12         0
-#>  7 NIFTY REALTY           3        7         0
-#>  8 NIFTY ENERGY           8        2         0
-#>  9 NIFTY FMCG             3       12         0
-#> 10 NIFTY MNC             11       19         0
+#>  7 NIFTY REALTY           9        1         0
+#>  8 NIFTY ENERGY           3        7         0
+#>  9 NIFTY FMCG            10        5         0
+#> 10 NIFTY MNC             19       11         0
 #> # ... with 47 more rows
 ```
-
