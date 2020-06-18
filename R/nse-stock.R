@@ -144,13 +144,13 @@ nse_stock_year_low <- function(clean_names = TRUE) {
 #'
 nse_stock_code <- function(clean_names = TRUE) {
 
-  url <- "https://www.nseindia.com/content/equities/EQUITY_L.csv"
+  url <- "https://www1.nseindia.com/content/equities/EQUITY_L.csv"
 
   url %>%
     utils::read.csv() %>%
     magrittr::extract(., 1:2) %>%
-    tibble::as_tibble() %>%
-    purrr::map_dfc(as.character) -> result
+    lapply(as.character) %>%
+    as.data.frame() -> result
 
   if (clean_names) {
     names(result) <- c("symbol", "company")
@@ -263,7 +263,7 @@ nse_stock_quote <- function(stock_code) {
   if (nse_stock_valid(stock_code)) {
 
     base_url %>%
-      httr::modify_url(query = "symbol=") %>%
+      paste0("?symbol=") %>%
       paste0(toupper(stock_code)) %>%
       xml2::read_html() %>%
       rvest::html_nodes("#responseDiv") %>%
