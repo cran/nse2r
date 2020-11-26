@@ -10,14 +10,14 @@
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/nse2r)](https://cran.r-project.org/package=nse2r)
 [![cran
 checks](https://cranchecks.info/badges/summary/nse2r)](https://cran.r-project.org/web/checks/check_results_nse2r.html)
-[![Travis-CI Build
-Status](https://travis-ci.org/rsquaredacademy/nse2r.svg?branch=master)](https://travis-ci.org/rsquaredacademy/nse2r)
+[![R build
+status](https://github.com/rsquaredacademy/nse2r/workflows/R-CMD-check/badge.svg)](https://github.com/rsquaredacademy/nse2r/actions)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/rsquaredacademy/nse2r/master.svg)](https://codecov.io/github/rsquaredacademy/nse2r?branch=master)
-[![](https://cranlogs.r-pkg.org/badges/grand-total/nse2r)](https://cran.r-project.org/package=nse2r)
+[![status](https://tinyverse.netlify.com/badge/nse2r)](https://CRAN.R-project.org/package=nse2r)
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![status](https://tinyverse.netlify.com/badge/nse2r)](https://CRAN.R-project.org/package=nse2r)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/nse2r)](https://cran.r-project.org/package=nse2r)
 <!-- badges: end -->
 
 ## Overview
@@ -91,121 +91,121 @@ Users can retain the names and format as returned by NSE using the
 
 ``` r
 nse_index_quote()
-#>           index_name last_traded_price  change percent_change
-#> 1  NIFTY 50 Pre Open         10014.800  201.10           2.05
-#> 2           NIFTY 50          9914.000  100.30           1.02
-#> 3      NIFTY NEXT 50         24863.450   70.15           0.28
-#> 4    NIFTY100 LIQ 15          2456.800  -13.45          -0.54
-#> 5         NIFTY BANK         20296.700  383.80           1.93
-#> 6          INDIA VIX            32.965    0.39           1.18
-#> 7          NIFTY 100         10097.350   91.55           0.91
-#> 8          NIFTY 500          8152.300   65.85           0.81
-#> 9   NIFTY MIDCAP 100         14230.600   62.05           0.44
-#> 10   NIFTY MIDCAP 50          3975.500   22.60           0.57
-#> 11       NIFTY INFRA          2918.700   -7.25          -0.25
-#> 12      NIFTY REALTY           196.850   -1.65          -0.83
-#> 13      NIFTY ENERGY         13780.550  -34.90          -0.25
-#> 14        NIFTY FMCG         28575.350 -126.45          -0.44
-#> 15         NIFTY MNC         12663.350  -34.30          -0.27
-#> 16      NIFTY PHARMA          9926.400  -62.65          -0.63
-#> 17         NIFTY PSE          2409.650   -7.60          -0.31
-#> 18    NIFTY PSU BANK          1358.600  -12.90          -0.94
-#> 19 NIFTY SERV SECTOR         13129.300  237.60           1.84
-#> 20          NIFTY IT         14450.800   54.10           0.38
-#> 21  NIFTY SMLCAP 100          4404.750   -4.85          -0.11
-#> 22         NIFTY 200          5154.500   44.15           0.86
-#> 23        NIFTY AUTO          6451.050    8.05           0.12
-#> 24       NIFTY MEDIA          1314.950   16.15           1.24
-#> 25       NIFTY METAL          1955.900   27.35           1.42
-#> 26 NIFTY DIV OPPS 50          2158.850    0.55           0.03
-#> 27 NIFTY COMMODITIES          2797.200   17.00           0.61
-#> 28 NIFTY CONSUMPTION          4601.200   -4.05          -0.09
-#> 29        NIFTY CPSE          1404.750   -2.95          -0.21
-#> 30 NIFTY FIN SERVICE         10089.950  272.05           2.77
-#> 31 NIFTY GROWSECT 15          4966.150   65.30           1.33
-#> 32  NIFTY50 VALUE 20          4825.800    6.00           0.12
-#> 33 NIFTY50 TR 2X LEV          4132.450   82.45           2.04
-#> 34 NIFTY50 PR 2X LEV          3148.950   62.80           2.03
-#> 35 NIFTY50 TR 1X INV           386.100   -3.95          -1.01
-#> 36 NIFTY50 PR 1X INV           442.000   -4.55          -1.02
-#> 37    NIFTY ALPHA 50         13006.800  154.15           1.20
-#> 38   NIFTY50 EQL WGT         10304.700   11.85           0.12
-#> 39  NIFTY100 EQL WGT         11393.700    4.20           0.04
-#> 40 NIFTY100 LOWVOL30          8053.900   10.10           0.13
-#> 41  NIFTY MID LIQ 15          3340.300   19.30           0.58
-#> 42    NIFTY PVT BANK         11155.000  208.70           1.91
-#> 43 NIFTY100 QUALTY30          2347.000    8.80           0.38
-#> 44   NIFTY GS 8 13YR          2172.000   -6.93          -0.31
-#> 45     NIFTY GS 10YR          1986.150   -7.62          -0.38
-#> 46 NIFTY GS 10YR CLN           975.640   -3.92          -0.40
-#> 47    NIFTY GS 4 8YR          2309.580   -4.64          -0.20
-#> 48  NIFTY GS 11 15YR          2339.530   -8.16          -0.34
-#> 49 NIFTY GS 15YRPLUS          2568.510   -1.10          -0.04
-#> 50 NIFTY GS COMPSITE          2213.760   -5.88          -0.26
-#> 51  NIFTY MIDCAP 150          5399.550   30.10           0.56
-#> 52   NIFTY SMLCAP 50          2065.300   -6.50          -0.31
-#> 53  NIFTY SMLCAP 250          3881.700   -2.95          -0.08
-#> 54  NIFTY MIDSML 400          4852.950   18.00           0.37
-#> 55 NIFTY200 QUALTY30          8927.100   19.90           0.22
+#>           index_name last_traded_price change percent_change
+#> 1  NIFTY 50 Pre Open        12906.4500  48.05           0.37
+#> 2           NIFTY 50        12987.0000 128.60           1.00
+#> 3      NIFTY NEXT 50        30186.0500 269.75           0.90
+#> 4    NIFTY100 LIQ 15         3151.8500  38.50           1.24
+#> 5         NIFTY BANK        29549.7500 353.35           1.21
+#> 6          INDIA VIX           20.0225  -3.10         -13.43
+#> 7          NIFTY 100        13087.7500 127.95           0.99
+#> 8          NIFTY 500        10674.0500  99.10           0.94
+#> 9   NIFTY MIDCAP 100        19196.4500 163.85           0.86
+#> 10   NIFTY MIDCAP 50         5411.6000  77.15           1.45
+#> 11       NIFTY INFRA         3431.6000  24.25           0.71
+#> 12      NIFTY REALTY          254.4500   1.95           0.77
+#> 13      NIFTY ENERGY        16346.0000 -42.00          -0.26
+#> 14        NIFTY FMCG        31701.3000 259.60           0.83
+#> 15         NIFTY MNC        14835.4500 121.05           0.82
+#> 16      NIFTY PHARMA        11801.2500 166.05           1.43
+#> 17         NIFTY PSE         2614.3000  22.90           0.88
+#> 18    NIFTY PSU BANK         1539.0500  29.20           1.93
+#> 19 NIFTY SERV SECTOR        18208.6000 212.55           1.18
+#> 20          NIFTY IT        21859.9000 154.00           0.71
+#> 21  NIFTY SMLCAP 100         6377.4000  54.20           0.86
+#> 22         NIFTY 200         6710.6500  64.65           0.97
+#> 23        NIFTY AUTO         8767.7500  29.30           0.34
+#> 24       NIFTY MEDIA         1481.2500   8.75           0.59
+#> 25       NIFTY METAL         2925.0500 108.50           3.85
+#> 26 NIFTY DIV OPPS 50         2646.2500  20.75           0.79
+#> 27 NIFTY COMMODITIES         3604.0500  41.70           1.17
+#> 28 NIFTY CONSUMPTION         5368.6500  33.45           0.63
+#> 29        NIFTY CPSE         1517.4000  11.35           0.75
+#> 30 NIFTY FIN SERVICE        14237.6500 225.95           1.61
+#> 31 NIFTY GROWSECT 15         6523.7000  83.15           1.29
+#> 32  NIFTY50 VALUE 20         6255.2000  50.90           0.82
+#> 33 NIFTY50 TR 2X LEV         6988.1000 136.55           1.99
+#> 34 NIFTY50 PR 2X LEV         5262.2500 102.85           1.99
+#> 35 NIFTY50 TR 1X INV          293.5000  -2.95          -1.00
+#> 36 NIFTY50 PR 1X INV          338.0500  -3.40          -1.00
+#> 37    NIFTY ALPHA 50        18660.4000  49.85           0.27
+#> 38   NIFTY50 EQL WGT        13523.7500 155.10           1.16
+#> 39  NIFTY100 EQL WGT        14377.1000 151.05           1.06
+#> 40 NIFTY100 LOWVOL30        10144.0500  85.05           0.85
+#> 41  NIFTY MID LIQ 15         4753.7000  59.05           1.26
+#> 42    NIFTY PVT BANK        16390.4000 157.50           0.97
+#> 43 NIFTY100 QUALTY30         3020.0500  20.60           0.69
+#> 44   NIFTY GS 8 13YR         2247.0800   2.25           0.10
+#> 45     NIFTY GS 10YR         2026.7400   2.08           0.10
+#> 46 NIFTY GS 10YR CLN          970.3800   0.86           0.09
+#> 47    NIFTY GS 4 8YR         2393.4200   1.01           0.04
+#> 48  NIFTY GS 11 15YR         2435.7900   5.30           0.22
+#> 49 NIFTY GS 15YRPLUS         2644.7000   0.18           0.01
+#> 50 NIFTY GS COMPSITE         2293.0000   2.21           0.10
+#> 51  NIFTY MIDCAP 150         7278.1500  50.60           0.70
+#> 52   NIFTY SMLCAP 50         3146.4500  26.85           0.86
+#> 53  NIFTY SMLCAP 250         5466.0500  41.85           0.77
+#> 54  NIFTY MIDSML 400         6628.7500  47.50           0.72
+#> 55 NIFTY200 QUALTY30        11098.7500  60.80           0.55
 
 # retain original column names as returned by NSE
 nse_index_quote(clean_names = FALSE)
-#>              skipped lastPrice  change pChange
-#> 1  NIFTY 50 Pre Open 10014.800  201.10    2.05
-#> 2           NIFTY 50  9914.000  100.30    1.02
-#> 3      NIFTY NEXT 50 24863.450   70.15    0.28
-#> 4    NIFTY100 LIQ 15  2456.800  -13.45   -0.54
-#> 5         NIFTY BANK 20296.700  383.80    1.93
-#> 6          INDIA VIX    32.965    0.39    1.18
-#> 7          NIFTY 100 10097.350   91.55    0.91
-#> 8          NIFTY 500  8152.300   65.85    0.81
-#> 9   NIFTY MIDCAP 100 14230.600   62.05    0.44
-#> 10   NIFTY MIDCAP 50  3975.500   22.60    0.57
-#> 11       NIFTY INFRA  2918.700   -7.25   -0.25
-#> 12      NIFTY REALTY   196.850   -1.65   -0.83
-#> 13      NIFTY ENERGY 13780.550  -34.90   -0.25
-#> 14        NIFTY FMCG 28575.350 -126.45   -0.44
-#> 15         NIFTY MNC 12663.350  -34.30   -0.27
-#> 16      NIFTY PHARMA  9926.400  -62.65   -0.63
-#> 17         NIFTY PSE  2409.650   -7.60   -0.31
-#> 18    NIFTY PSU BANK  1358.600  -12.90   -0.94
-#> 19 NIFTY SERV SECTOR 13129.300  237.60    1.84
-#> 20          NIFTY IT 14450.800   54.10    0.38
-#> 21  NIFTY SMLCAP 100  4404.750   -4.85   -0.11
-#> 22         NIFTY 200  5154.500   44.15    0.86
-#> 23        NIFTY AUTO  6451.050    8.05    0.12
-#> 24       NIFTY MEDIA  1314.950   16.15    1.24
-#> 25       NIFTY METAL  1955.900   27.35    1.42
-#> 26 NIFTY DIV OPPS 50  2158.850    0.55    0.03
-#> 27 NIFTY COMMODITIES  2797.200   17.00    0.61
-#> 28 NIFTY CONSUMPTION  4601.200   -4.05   -0.09
-#> 29        NIFTY CPSE  1404.750   -2.95   -0.21
-#> 30 NIFTY FIN SERVICE 10089.950  272.05    2.77
-#> 31 NIFTY GROWSECT 15  4966.150   65.30    1.33
-#> 32  NIFTY50 VALUE 20  4825.800    6.00    0.12
-#> 33 NIFTY50 TR 2X LEV  4132.450   82.45    2.04
-#> 34 NIFTY50 PR 2X LEV  3148.950   62.80    2.03
-#> 35 NIFTY50 TR 1X INV   386.100   -3.95   -1.01
-#> 36 NIFTY50 PR 1X INV   442.000   -4.55   -1.02
-#> 37    NIFTY ALPHA 50 13006.800  154.15    1.20
-#> 38   NIFTY50 EQL WGT 10304.700   11.85    0.12
-#> 39  NIFTY100 EQL WGT 11393.700    4.20    0.04
-#> 40 NIFTY100 LOWVOL30  8053.900   10.10    0.13
-#> 41  NIFTY MID LIQ 15  3340.300   19.30    0.58
-#> 42    NIFTY PVT BANK 11155.000  208.70    1.91
-#> 43 NIFTY100 QUALTY30  2347.000    8.80    0.38
-#> 44   NIFTY GS 8 13YR  2172.000   -6.93   -0.31
-#> 45     NIFTY GS 10YR  1986.150   -7.62   -0.38
-#> 46 NIFTY GS 10YR CLN   975.640   -3.92   -0.40
-#> 47    NIFTY GS 4 8YR  2309.580   -4.64   -0.20
-#> 48  NIFTY GS 11 15YR  2339.530   -8.16   -0.34
-#> 49 NIFTY GS 15YRPLUS  2568.510   -1.10   -0.04
-#> 50 NIFTY GS COMPSITE  2213.760   -5.88   -0.26
-#> 51  NIFTY MIDCAP 150  5399.550   30.10    0.56
-#> 52   NIFTY SMLCAP 50  2065.300   -6.50   -0.31
-#> 53  NIFTY SMLCAP 250  3881.700   -2.95   -0.08
-#> 54  NIFTY MIDSML 400  4852.950   18.00    0.37
-#> 55 NIFTY200 QUALTY30  8927.100   19.90    0.22
+#>              skipped  lastPrice change pChange
+#> 1  NIFTY 50 Pre Open 12906.4500  48.05    0.37
+#> 2           NIFTY 50 12987.0000 128.60    1.00
+#> 3      NIFTY NEXT 50 30186.0500 269.75    0.90
+#> 4    NIFTY100 LIQ 15  3151.8500  38.50    1.24
+#> 5         NIFTY BANK 29549.7500 353.35    1.21
+#> 6          INDIA VIX    20.0225  -3.10  -13.43
+#> 7          NIFTY 100 13087.7500 127.95    0.99
+#> 8          NIFTY 500 10674.0500  99.10    0.94
+#> 9   NIFTY MIDCAP 100 19196.4500 163.85    0.86
+#> 10   NIFTY MIDCAP 50  5411.6000  77.15    1.45
+#> 11       NIFTY INFRA  3431.6000  24.25    0.71
+#> 12      NIFTY REALTY   254.4500   1.95    0.77
+#> 13      NIFTY ENERGY 16346.0000 -42.00   -0.26
+#> 14        NIFTY FMCG 31701.3000 259.60    0.83
+#> 15         NIFTY MNC 14835.4500 121.05    0.82
+#> 16      NIFTY PHARMA 11801.2500 166.05    1.43
+#> 17         NIFTY PSE  2614.3000  22.90    0.88
+#> 18    NIFTY PSU BANK  1539.0500  29.20    1.93
+#> 19 NIFTY SERV SECTOR 18208.6000 212.55    1.18
+#> 20          NIFTY IT 21859.9000 154.00    0.71
+#> 21  NIFTY SMLCAP 100  6377.4000  54.20    0.86
+#> 22         NIFTY 200  6710.6500  64.65    0.97
+#> 23        NIFTY AUTO  8767.7500  29.30    0.34
+#> 24       NIFTY MEDIA  1481.2500   8.75    0.59
+#> 25       NIFTY METAL  2925.0500 108.50    3.85
+#> 26 NIFTY DIV OPPS 50  2646.2500  20.75    0.79
+#> 27 NIFTY COMMODITIES  3604.0500  41.70    1.17
+#> 28 NIFTY CONSUMPTION  5368.6500  33.45    0.63
+#> 29        NIFTY CPSE  1517.4000  11.35    0.75
+#> 30 NIFTY FIN SERVICE 14237.6500 225.95    1.61
+#> 31 NIFTY GROWSECT 15  6523.7000  83.15    1.29
+#> 32  NIFTY50 VALUE 20  6255.2000  50.90    0.82
+#> 33 NIFTY50 TR 2X LEV  6988.1000 136.55    1.99
+#> 34 NIFTY50 PR 2X LEV  5262.2500 102.85    1.99
+#> 35 NIFTY50 TR 1X INV   293.5000  -2.95   -1.00
+#> 36 NIFTY50 PR 1X INV   338.0500  -3.40   -1.00
+#> 37    NIFTY ALPHA 50 18660.4000  49.85    0.27
+#> 38   NIFTY50 EQL WGT 13523.7500 155.10    1.16
+#> 39  NIFTY100 EQL WGT 14377.1000 151.05    1.06
+#> 40 NIFTY100 LOWVOL30 10144.0500  85.05    0.85
+#> 41  NIFTY MID LIQ 15  4753.7000  59.05    1.26
+#> 42    NIFTY PVT BANK 16390.4000 157.50    0.97
+#> 43 NIFTY100 QUALTY30  3020.0500  20.60    0.69
+#> 44   NIFTY GS 8 13YR  2247.0800   2.25    0.10
+#> 45     NIFTY GS 10YR  2026.7400   2.08    0.10
+#> 46 NIFTY GS 10YR CLN   970.3800   0.86    0.09
+#> 47    NIFTY GS 4 8YR  2393.4200   1.01    0.04
+#> 48  NIFTY GS 11 15YR  2435.7900   5.30    0.22
+#> 49 NIFTY GS 15YRPLUS  2644.7000   0.18    0.01
+#> 50 NIFTY GS COMPSITE  2293.0000   2.21    0.10
+#> 51  NIFTY MIDCAP 150  7278.1500  50.60    0.70
+#> 52   NIFTY SMLCAP 50  3146.4500  26.85    0.86
+#> 53  NIFTY SMLCAP 250  5466.0500  41.85    0.77
+#> 54  NIFTY MIDSML 400  6628.7500  47.50    0.72
+#> 55 NIFTY200 QUALTY30 11098.7500  60.80    0.55
 ```
 
 ### Stock
@@ -215,358 +215,593 @@ nse_index_quote(clean_names = FALSE)
 ``` r
 nse_stock_top_gainers()
 #>        symbol series last_corp_announcement_date
-#> 1    HDFCBANK     EQ                  2019-09-19
-#> 2        HDFC     EQ                  2020-07-09
-#> 3   ICICIBANK     EQ                  2019-07-22
-#> 4    JSWSTEEL     EQ                  2020-07-06
-#> 5    HINDALCO     EQ                  2019-08-14
-#> 6         UPL     EQ                  2019-07-02
-#> 7        INFY     EQ                  2020-05-29
-#> 8   KOTAKBANK     EQ                  2019-07-12
-#> 9  HEROMOTOCO     EQ                  2020-02-17
-#> 10       VEDL     EQ                  2020-03-05
+#> 1    JSWSTEEL     EQ                  2020-07-06
+#> 2   TATASTEEL     EQ                  2020-08-06
+#> 3      GRASIM     EQ                  2020-08-26
+#> 4  BAJFINANCE     EQ                  2020-03-03
+#> 5    SHREECEM     EQ                  2020-02-24
+#> 6  BAJAJ-AUTO     EQ                  2020-03-03
+#> 7    HINDALCO     EQ                  2020-09-03
+#> 8  ADANIPORTS     EQ                  2020-06-17
+#> 9        HDFC     EQ                  2020-07-09
+#> 10   HDFCBANK     EQ                  2019-09-19
 #>                                                     last_corp_announcement
-#> 1  Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share
-#> 2                        Annual General Meeting/Dividend - Rs 21 Per Share
-#> 3                         Annual General Meeting/Dividend - Re 1 Per Share
-#> 4                                                Dividend - Rs 2 Per Share
-#> 5                      Annual General Meeting/Dividend - Rs 1.20 Per Share
-#> 6                                                                Bonus 1:2
-#> 7                                             Dividend - Rs 9.50 Per Share
-#> 8                        Annual General Meeting/Dividend Rs 0.80 Per Share
-#> 9                                          Interim Dividend - Rs 65 Per Sh
-#> 10                                     Interim Dividend - Rs 3.9 Per Share
+#> 1                                                Dividend - Rs 2 Per Share
+#> 2                                               Dividend - Rs 10 Per Share
+#> 3                                                Dividend - Rs 4 Per Share
+#> 4                                       Interim Dividend - Rs 10 Per Share
+#> 5                                      Interim Dividend - Rs 110 Per Share
+#> 6                                      Interim Dividend - Rs 120 Per Share
+#> 7                         Annual General Meeting/Dividend - Re 1 Per Share
+#> 8                                                   Annual General Meeting
+#> 9                        Annual General Meeting/Dividend - Rs 21 Per Share
+#> 10 Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share
 #>    open_price high_price low_price last_traded_price prev_close_price
-#> 1      975.00     993.95    952.00            989.15           949.85
-#> 2     1785.00    1834.00   1768.05           1820.00          1751.65
-#> 3      342.25     347.90    326.05            342.40           331.10
-#> 4      189.00     195.95    185.75            189.00           183.75
-#> 5      149.90     154.60    146.90            149.85           145.80
-#> 6      416.00     429.40    410.00            414.90           405.00
-#> 7      702.00     712.00    699.15            700.00           687.55
-#> 8     1276.00    1295.80   1238.10           1271.15          1248.90
-#> 9     2380.00    2435.70   2360.00           2386.00          2348.15
-#> 10     105.00     105.90    101.65            103.95           102.40
+#> 1      338.50     362.20    336.00            362.00           338.25
+#> 2      546.00     571.10    541.25            569.40           541.25
+#> 3      850.20     881.00    847.05            880.00           843.10
+#> 4     4655.00    4854.00   4640.00           4850.00          4689.75
+#> 5    23949.00   24600.00  23700.00          24473.70         23698.80
+#> 6     3053.00    3150.00   3053.00           3145.00          3051.25
+#> 7      224.20     231.25    220.35            230.20           223.45
+#> 8      400.80     413.00    395.65            410.45           398.95
+#> 9     2197.15    2245.00   2187.65           2242.70          2191.35
+#> 10    1415.00    1432.00   1387.00           1431.90          1402.80
 #>    percent_change traded_quantity turnover_in_lakhs
-#> 1            4.14        22700113         222131.96
-#> 2            3.90         7453412         134946.26
-#> 3            3.41        57511276         195590.10
-#> 4            2.86        23464025          45001.65
-#> 5            2.78        28477572          43117.89
-#> 6            2.44        10359468          43640.29
-#> 7            1.81        10132423          71441.69
-#> 8            1.78         5266312          66988.54
-#> 9            1.61         2145404          51604.05
-#> 10           1.51        22657943          23584.65
+#> 1            7.02        10967276          38358.05
+#> 2            5.20        22570185         125512.80
+#> 3            4.38         4249437          36786.53
+#> 4            3.42         6273208         298648.61
+#> 5            3.27           74560          17930.17
+#> 6            3.07         1264680          39163.72
+#> 7            3.02        16363181          36849.88
+#> 8            2.88        12856261          51977.86
+#> 9            2.34         5026304         111341.68
+#> 10           2.07        13971563         197088.46
 
 # retain original column names as returned by NSE
 nse_stock_top_gainers(clean_names = FALSE)
 #>        symbol series lastCorpAnnouncementDate
-#> 1    HDFCBANK     EQ               2019-09-19
-#> 2        HDFC     EQ               2020-07-09
-#> 3   ICICIBANK     EQ               2019-07-22
-#> 4    JSWSTEEL     EQ               2020-07-06
-#> 5    HINDALCO     EQ               2019-08-14
-#> 6         UPL     EQ               2019-07-02
-#> 7        INFY     EQ               2020-05-29
-#> 8   KOTAKBANK     EQ               2019-07-12
-#> 9  HEROMOTOCO     EQ               2020-02-17
-#> 10       VEDL     EQ               2020-03-05
+#> 1    JSWSTEEL     EQ               2020-07-06
+#> 2   TATASTEEL     EQ               2020-08-06
+#> 3      GRASIM     EQ               2020-08-26
+#> 4  BAJFINANCE     EQ               2020-03-03
+#> 5    SHREECEM     EQ               2020-02-24
+#> 6  BAJAJ-AUTO     EQ               2020-03-03
+#> 7    HINDALCO     EQ               2020-09-03
+#> 8  ADANIPORTS     EQ               2020-06-17
+#> 9        HDFC     EQ               2020-07-09
+#> 10   HDFCBANK     EQ               2019-09-19
 #>                                                       lastCorpAnnouncement
-#> 1  Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share
-#> 2                        Annual General Meeting/Dividend - Rs 21 Per Share
-#> 3                         Annual General Meeting/Dividend - Re 1 Per Share
-#> 4                                                Dividend - Rs 2 Per Share
-#> 5                      Annual General Meeting/Dividend - Rs 1.20 Per Share
-#> 6                                                                Bonus 1:2
-#> 7                                             Dividend - Rs 9.50 Per Share
-#> 8                        Annual General Meeting/Dividend Rs 0.80 Per Share
-#> 9                                          Interim Dividend - Rs 65 Per Sh
-#> 10                                     Interim Dividend - Rs 3.9 Per Share
-#>    openPrice highPrice lowPrice     ltp previousPrice netPrice tradedQuantity
-#> 1     975.00    993.95   952.00  989.15        949.85     4.14       22700113
-#> 2    1785.00   1834.00  1768.05 1820.00       1751.65     3.90        7453412
-#> 3     342.25    347.90   326.05  342.40        331.10     3.41       57511276
-#> 4     189.00    195.95   185.75  189.00        183.75     2.86       23464025
-#> 5     149.90    154.60   146.90  149.85        145.80     2.78       28477572
-#> 6     416.00    429.40   410.00  414.90        405.00     2.44       10359468
-#> 7     702.00    712.00   699.15  700.00        687.55     1.81       10132423
-#> 8    1276.00   1295.80  1238.10 1271.15       1248.90     1.78        5266312
-#> 9    2380.00   2435.70  2360.00 2386.00       2348.15     1.61        2145404
-#> 10    105.00    105.90   101.65  103.95        102.40     1.51       22657943
+#> 1                                                Dividend - Rs 2 Per Share
+#> 2                                               Dividend - Rs 10 Per Share
+#> 3                                                Dividend - Rs 4 Per Share
+#> 4                                       Interim Dividend - Rs 10 Per Share
+#> 5                                      Interim Dividend - Rs 110 Per Share
+#> 6                                      Interim Dividend - Rs 120 Per Share
+#> 7                         Annual General Meeting/Dividend - Re 1 Per Share
+#> 8                                                   Annual General Meeting
+#> 9                        Annual General Meeting/Dividend - Rs 21 Per Share
+#> 10 Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share
+#>    openPrice highPrice lowPrice      ltp previousPrice netPrice tradedQuantity
+#> 1     338.50    362.20   336.00   362.00        338.25     7.02       10967276
+#> 2     546.00    571.10   541.25   569.40        541.25     5.20       22570185
+#> 3     850.20    881.00   847.05   880.00        843.10     4.38        4249437
+#> 4    4655.00   4854.00  4640.00  4850.00       4689.75     3.42        6273208
+#> 5   23949.00  24600.00 23700.00 24473.70      23698.80     3.27          74560
+#> 6    3053.00   3150.00  3053.00  3145.00       3051.25     3.07        1264680
+#> 7     224.20    231.25   220.35   230.20        223.45     3.02       16363181
+#> 8     400.80    413.00   395.65   410.45        398.95     2.88       12856261
+#> 9    2197.15   2245.00  2187.65  2242.70       2191.35     2.34        5026304
+#> 10   1415.00   1432.00  1387.00  1431.90       1402.80     2.07       13971563
 #>    turnoverInLakhs
-#> 1        222131.96
-#> 2        134946.26
-#> 3        195590.10
-#> 4         45001.65
-#> 5         43117.89
-#> 6         43640.29
-#> 7         71441.69
-#> 8         66988.54
-#> 9         51604.05
-#> 10        23584.65
+#> 1         38358.05
+#> 2        125512.80
+#> 3         36786.53
+#> 4        298648.61
+#> 5         17930.17
+#> 6         39163.72
+#> 7         36849.88
+#> 8         51977.86
+#> 9        111341.68
+#> 10       197088.46
 ```
 
 ##### Stocks that have touched their 52 week highs during the day
 
 ``` r
 nse_stock_year_high()
-#>        symbol                            symbol_desc       date new_high
-#> 1  ADANIGREEN             Adani Green Energy Limited 2020-06-15   363.45
-#> 2  ALEMBICLTD                        Alembic Limited 2020-06-15    89.40
-#> 3    ALOKINDS                Alok Industries Limited 2020-06-15    31.30
-#> 4  ANDHRACEMT                 Andhra Cements Limited 2020-06-15     6.40
-#> 5      APLLTD        Alembic Pharmaceuticals Limited 2020-05-21   943.80
-#> 6    ASTRAZEN       AstraZeneca Pharma India Limited 2020-06-08  3574.15
-#> 7   BAYERCROP              Bayer Cropscience Limited 2020-06-09  5723.00
-#> 8         BCG                Brightcom Group Limited 2020-06-15    11.95
-#> 9   BIRLATYRE                    Birla Tyres Limited 2020-06-15    28.45
-#> 10    DHANUKA               Dhanuka Agritech Limited 2020-06-15   748.05
-#> 11   DNAMEDIA     Diligent Media Corporation Limited 2020-06-12     0.70
-#> 12 GAMMNINFRA Gammon Infrastructure Projects Limited 2020-05-15     0.65
-#> 13 GMMPFAUDLR                   GMM Pfaudler Limited 2020-06-10  4629.55
-#> 14     GOENKA      Goenka Diamond and Jewels Limited 2020-06-15     1.10
-#> 15   GRANULES                 Granules India Limited 2020-06-12   224.45
-#> 16 HEXATRADEX                    Hexa Tradex Limited 2020-06-15    16.85
-#> 17 HOTELRUGBY                    Hotel Rugby Limited 2020-06-15     1.30
-#> 18 JMTAUTOLTD                       JMT Auto Limited 2020-06-15     4.00
-#> 19   JUBILANT         Jubilant Life Sciences Limited 2020-06-15   695.90
-#> 20       KSCL            Kaveri Seed Company Limited 2019-09-25   620.00
-#> 21 MANAKALUCO     Manaksia Aluminium Company Limited 2020-06-15    10.65
-#> 22   MARKSANS                Marksans Pharma Limited 2020-06-09    33.75
-#> 23    METKORE    Metkore Alloys & Industries Limited 2020-06-15     0.60
-#> 24     MITTAL              Mittal Life Style Limited 2020-06-15   151.80
-#> 25       MOIL                           MOIL Limited 2020-01-13   170.00
-#> 26 MOREPENLAB           Morepen Laboratories Limited 2019-09-24    26.60
-#> 27 MOTOGENFIN    The Motor & General Finance Limited 2020-06-11    53.65
-#> 28    NECLIFE            Nectar Lifesciences Limited 2020-06-11    19.10
-#> 29  NETWORK18  Network18 Media & Investments Limited 2020-06-15    38.15
-#> 30 OPTOCIRCUI          Opto Circuits (India) Limited 2020-06-15    10.60
-#> 31      PIIND                  PI Industries Limited 2020-05-29  1689.00
-#> 32   PNBGILTS                      PNB Gilts Limited 2019-07-17    39.80
-#> 33 PRAKASHSTL               Prakash Steelage Limited 2020-06-15     1.45
-#> 34  PUNJLLOYD                     Punj Lloyd Limited 2019-07-01     1.60
-#> 35   RAJRAYON           Raj Rayon Industries Limited 2020-06-15     0.30
-#> 36     RALLIS                   Rallis India Limited 2020-02-20   272.00
-#> 37   RAMSARUP            Ramsarup Industries Limited 2020-04-28     0.70
-#> 38   RELIANCE            Reliance Industries Limited 2020-06-15  1648.55
-#> 39      RUCHI          Ruchi Soya Industries Limited 2020-06-15  1028.70
-#> 40  RUCHINFRA           Ruchi Infrastructure Limited 2020-06-15    14.60
-#> 41  SAGARDEEP               Sagardeep Alloys Limited 2020-06-15    96.90
-#> 42 SHREDIGCEM           Shree Digvijay Cement Co.Ltd 2020-06-15    46.90
-#> 43   SUMICHEM        Sumitomo Chemical India Limited 2020-06-15   309.00
-#> 44     SYNCOM              Syncom Healthcare Limited 2020-06-15     2.00
-#> 45   TATACOMM            Tata Communications Limited 2020-06-15   587.15
-#> 46 TV18BRDCST                 TV18 Broadcast Limited 2020-06-15    38.30
-#> 47  ZENITHBIR           Zenith Birla (India) Limited 2020-06-15     1.05
-#>       year last_traded_price prev_high prev_close change percent_change
-#> 1   363.45            363.45    351.00     346.15  17.30           5.00
-#> 2    89.40             79.30     77.45      77.25   2.05           2.65
-#> 3    31.30             31.30     29.85      29.85   1.45           4.86
-#> 4     6.40              6.40      6.10       6.10   0.30           4.92
-#> 5   943.80            907.50    915.00     889.95  17.55           1.97
-#> 6  3574.15           3490.00   3493.95    3431.90  58.10           1.69
-#> 7  5723.00           5690.00   5600.00    5491.00 199.00           3.62
-#> 8    11.95             11.95     11.40      11.40   0.55           4.82
-#> 9    28.45             28.45     27.10      27.10   1.35           4.98
-#> 10  748.05            735.00    698.00     690.90  44.10           6.38
-#> 11    0.70              0.65      0.70       0.65   0.00           0.00
-#> 12    0.65              0.65      0.65       0.60   0.05           8.33
-#> 13 4629.55           4465.30   4619.85    4422.80  42.50           0.96
-#> 14    1.10              1.10      1.05       1.05   0.05           4.76
-#> 15  224.45            216.05    217.40     207.55   8.50           4.10
-#> 16   16.85             15.45     16.05      16.05  -0.60          -3.74
-#> 17    1.30              1.30      1.25       1.25   0.05           4.00
-#> 18    4.00              4.00      3.85       3.85   0.15           3.90
-#> 19  695.90            655.00    691.00     673.95 -18.95          -2.81
-#> 20  620.00            620.00    575.00     547.90  72.10          13.16
-#> 21   10.65             10.30     10.15      10.15   0.15           1.48
-#> 22   33.75             33.75     33.45      32.15   1.60           4.98
-#> 23    0.60              0.60      0.55       0.55   0.05           9.09
-#> 24  151.80            151.75    150.45     150.05   1.70           1.13
-#> 25  170.00            161.30    169.95     148.85  12.45           8.36
-#> 26   26.60             26.60     23.95      22.20   4.40          19.82
-#> 27   53.65             48.95     51.00      49.10  -0.15          -0.31
-#> 28   19.10             19.10     18.05      15.95   3.15          19.75
-#> 29   38.15             38.15     36.35      36.35   1.80           4.95
-#> 30   10.60             10.60     10.10      10.10   0.50           4.95
-#> 31 1689.00           1610.00   1650.00    1580.65  29.35           1.86
-#> 32   39.80             36.55     39.60      37.00  -0.45          -1.22
-#> 33    1.45              1.45      1.40       1.40   0.05           3.57
-#> 34    1.60              1.60      1.60       1.55   0.05           3.23
-#> 35    0.30              0.30      0.25       0.25   0.05          20.00
-#> 36  272.00            266.50    256.00     251.50  15.00           5.96
-#> 37    0.70              0.70      0.70       0.65   0.05           7.69
-#> 38 1648.55           1614.05   1626.95    1614.55  -0.50          -0.03
-#> 39 1028.70           1028.70    979.75     979.75  48.95           5.00
-#> 40   14.60             14.60     13.95      13.95   0.65           4.66
-#> 41   96.90             95.50     93.00      92.50   3.00           3.24
-#> 42   46.90             42.20     46.90      44.95  -2.75          -6.12
-#> 43  309.00            298.90    299.00     297.00   1.90           0.64
-#> 44    2.00              2.00      1.95       1.95   0.05           2.56
-#> 45  587.15            577.20    533.80     533.80  43.40           8.13
-#> 46   38.30             36.65     33.75      33.20   3.45          10.39
-#> 47    1.05              1.05      1.00       1.00   0.05           5.00
+#>        symbol
+#> 1       AARON
+#> 2         ACE
+#> 3  ADANIPORTS
+#> 4  AMARAJABAT
+#> 5   ASHIMASYN
+#> 6        BEPL
+#> 7  BIOFILCHEM
+#> 8     CGPOWER
+#> 9  CHAMBLFERT
+#> 10   DBREALTY
+#> 11       DHFL
+#> 12      DIXON
+#> 13   EIDPARRY
+#> 14        EKC
+#> 15  GALLISPAT
+#> 16  GINNIFILA
+#> 17     GRASIM
+#> 18  GUJGASLTD
+#> 19        HCG
+#> 20   HINDALCO
+#> 21    ICICIGI
+#> 22   INDIACEM
+#> 23  INTELLECT
+#> 24 JINDALSTEL
+#> 25      JSWHL
+#> 26   JSWSTEEL
+#> 27 KAJARIACER
+#> 28      KARDA
+#> 29 KEYFINSERV
+#> 30        M50
+#> 31    MAANALU
+#> 32     NAUKRI
+#> 33 NCPSESDL24
+#> 34   ONMOBILE
+#> 35 ORCHPHARMA
+#> 36  PALREDTEC
+#> 37       PGEL
+#> 38       PGHL
+#> 39     PILITA
+#> 40 PLASTIBLEN
+#> 41      PURVA
+#> 42   RELIGARE
+#> 43    RKFORGE
+#> 44       ROML
+#> 45    SHRADHA
+#> 46    SKIPPER
+#> 47 SOMANYCERA
+#> 48       SPYL
+#> 49      TANLA
+#> 50  TATASTEEL
+#> 51 TATASTLBSL
+#> 52    TIINDIA
+#> 53      TOTAL
+#> 54 TPLPLASTEH
+#> 55   TREJHARA
+#> 56    TRIDENT
+#> 57  UTINEXT50
+#> 58   VIDEOIND
+#> 59  VISHWARAJ
+#> 60       VSSL
+#>                                                               symbol_desc
+#> 1                                                Aaron Industries Limited
+#> 2                                   Action Construction Equipment Limited
+#> 3                           Adani Ports and Special Economic Zone Limited
+#> 4                                            Amara Raja Batteries Limited
+#> 5                                                          Ashima Limited
+#> 6                                   Bhansali Engineering Polymers Limited
+#> 7                              Biofil Chemicals & Pharmaceuticals Limited
+#> 8                               CG Power and Industrial Solutions Limited
+#> 9                                 Chambal Fertilizers & Chemicals Limited
+#> 10                                                     D B Realty Limited
+#> 11                              Dewan Housing Finance Corporation Limited
+#> 12                                     Dixon Technologies (India) Limited
+#> 13                                                EID Parry India Limited
+#> 14                                         Everest Kanto Cylinder Limited
+#> 15                                                 Gallantt Ispat Limited
+#> 16                                                Ginni Filaments Limited
+#> 17                                              Grasim Industries Limited
+#> 18                                                    Gujarat Gas Limited
+#> 19                                  Healthcare Global Enterprises Limited
+#> 20                                            Hindalco Industries Limited
+#> 21                        ICICI Lombard General Insurance Company Limited
+#> 22                                              The India Cements Limited
+#> 23                                         Intellect Design Arena Limited
+#> 24                                           Jindal Steel & Power Limited
+#> 25                                                   JSW Holdings Limited
+#> 26                                                      JSW Steel Limited
+#> 27                                               Kajaria Ceramics Limited
+#> 28                                            Karda Constructions Limited
+#> 29                                     Keynote Financial Services Limited
+#> 30          Motilal Oswal Mutual Fund - Motilal Oswal MOSt Shares M50 ETF
+#> 31                                                 Maan Aluminium Limited
+#> 32                                              Info Edge (India) Limited
+#> 33  Nippon India Mutual Fund-Nippon India ETF Nifty CPSE Bond Plus SDL-24
+#> 34                                                OnMobile Global Limited
+#> 35                                                  Orchid Pharma Limited
+#> 36                                            Palred Technologies Limited
+#> 37                                                PG Electroplast Limited
+#> 38                                        Procter & Gamble Health Limited
+#> 39                                          PIL ITALICA LIFESTYLE LIMITED
+#> 40                                             Plastiblends India Limited
+#> 41                                                    Puravankara Limited
+#> 42                                           Religare Enterprises Limited
+#> 43                                            Ramkrishna Forgings Limited
+#> 44                                                  Raj Oil Mills Limited
+#> 45                                          Shradha Infraprojects Limited
+#> 46                                                        Skipper Limited
+#> 47                                                Somany Ceramics Limited
+#> 48                                           Shekhawati Poly-Yarn Limited
+#> 49                                                Tanla Platforms Limited
+#> 50                                                     Tata Steel Limited
+#> 51                                                 Tata Steel Bsl Limited
+#> 52                                      Tube Investments of India Limited
+#> 53                                        Total Transport Systems Limited
+#> 54                                                   TPL Plastech Limited
+#> 55                                             TREJHARA SOLUTIONS LIMITED
+#> 56                                                        Trident Limited
+#> 57 UTI Mutual Fund - UTI NIfty Next 50 Exchange Traded Fund - UTI NIFTY N
+#> 58                                            Videocon Industries Limited
+#> 59                                     Vishwaraj Sugar Industries Limited
+#> 60                                        Vardhman Special Steels Limited
+#>          date new_high     year last_traded_price prev_high prev_close change
+#> 1  2020-11-25    64.75    64.75             64.75     61.70      61.70   3.05
+#> 2  2020-11-18   106.40   106.40            101.30     97.60      92.40   8.90
+#> 3  2020-11-25   413.00   413.00            410.45    404.70     398.95  11.50
+#> 4  2020-11-25   900.00   900.00            889.55    899.00     874.20  15.35
+#> 5  2020-11-25    10.55    10.55             10.55     10.35      10.05   0.50
+#> 6  2020-11-25   128.00   128.00            126.00    127.60     123.55   2.45
+#> 7  2020-11-25   208.35   208.35            208.35    198.45     198.45   9.90
+#> 8  2020-11-25    41.00    41.00             39.00     39.65      39.60  -0.60
+#> 9  2020-11-25   196.00   196.00            192.50    194.00     189.85   2.65
+#> 10 2019-12-03    12.80    12.80             12.80     12.50      10.70   2.10
+#> 11 2020-11-25    25.80    25.80             25.80     24.60      24.60   1.20
+#> 12 2020-11-24 11490.00 11490.00          11430.00  11000.00   10909.90 520.10
+#> 13 2020-11-24   342.55   342.55            336.00    332.40     326.95   9.05
+#> 14 2020-11-25    46.45    46.45             46.45     45.35      44.25   2.20
+#> 15 2020-06-25    36.25    36.25             32.50     35.80      31.45   1.05
+#> 16 2020-11-25    18.90    18.90             17.70     18.55      18.25  -0.55
+#> 17 2020-11-25   881.00   881.00            880.00    873.80     843.10  36.90
+#> 18 2020-11-25   348.00   348.00            344.00    345.55     338.05   5.95
+#> 19 2020-11-25   149.90   149.90            147.00    145.00     143.75   3.25
+#> 20 2020-11-25   231.25   231.25            230.20    230.00     223.45   6.75
+#> 21 2019-12-26  1468.00  1468.00           1468.00   1440.40    1382.85  85.15
+#> 22 2020-11-24   163.85   163.85            155.50    161.90     149.25   6.25
+#> 23 2020-11-25   277.00   277.00            277.00    270.00     263.85  13.15
+#> 24 2020-11-25   250.80   250.80            250.05    248.00     235.20  14.85
+#> 25 2020-11-25  3560.00  3560.00           3445.50   3499.00    3423.40  22.10
+#> 26 2020-11-17   362.20   362.20            362.00    350.50     338.25  23.75
+#> 27 2020-11-24   632.30   632.30            632.30    630.95     617.80  14.50
+#> 28 2020-10-12   114.00   114.00            111.60    112.05     110.50   1.10
+#> 29 2020-11-25   117.00   117.00            110.00    111.55     111.45  -1.45
+#> 30 2020-11-14   128.95   128.95            127.54    128.95     126.74   0.80
+#> 31 2020-11-25    84.60    84.60             83.25     83.05      78.20   5.05
+#> 32 2020-11-25  4196.95  4196.95           4180.00   4091.00    4041.80 138.20
+#> 33 2020-11-18   123.26   123.26            102.73    102.74     102.70   0.01
+#> 34 2020-09-15    56.50    56.50             56.50     52.40      51.40   5.10
+#> 35 2020-11-25    40.50    40.50             40.50     38.60      38.60   1.90
+#> 36 2020-11-25    41.15    41.15             37.25     39.20      39.20  -1.95
+#> 37 2020-11-17   155.00   155.00            150.00    153.10     148.90   1.10
+#> 38 2020-11-24  6484.85  6484.85           6360.00   6479.20    6414.90 -54.90
+#> 39 2020-11-23     8.35     8.35              7.95      8.30       8.05  -0.10
+#> 40 2020-11-25   269.00   269.00            265.65    264.80     253.30  12.35
+#> 41 2020-11-25    78.85    78.85             77.35     78.30      76.25   1.10
+#> 42 2020-11-25    67.35    67.35             64.55     62.70      60.20   4.35
+#> 43 2020-01-20   418.90   418.90            411.95    415.10     389.05  22.90
+#> 44 2020-11-25    16.05    16.05             16.05     15.30      15.30   0.75
+#> 45 2020-11-23    62.00    62.00             61.00     62.00      59.75   1.25
+#> 46 2020-11-25    58.90    58.90             56.00     57.50      56.60  -0.60
+#> 47 2020-11-25   272.20   272.20            269.35    272.00     267.15   2.20
+#> 48 2020-11-25     0.55     0.55              0.55      0.50       0.50   0.05
+#> 49 2020-11-25   583.50   583.50            583.50    555.90     555.75  27.75
+#> 50 2020-11-25   571.10   571.10            569.40    558.65     541.25  28.15
+#> 51 2020-11-25    35.00    35.00             34.95     34.00      32.85   2.10
+#> 52 2020-11-24   857.95   857.95            808.00    857.50     836.80 -28.80
+#> 53 2020-11-25    60.00    60.00             60.00     59.80      57.15   2.85
+#> 54 2020-11-25   152.40   152.40            146.20    151.90     144.95   1.25
+#> 55 2020-11-25    32.20    32.20             32.10     30.70      30.70   1.40
+#> 56 2020-11-23     8.55     8.55              8.05      8.55       7.85   0.20
+#> 57 2020-11-25   320.00   320.00            309.50    320.00     310.97  -1.47
+#> 58 2020-11-25     5.75     5.75              5.75      5.50       5.50   0.25
+#> 59 2020-11-09   132.00   132.00            123.50    129.80     120.80   2.70
+#> 60 2020-11-25   101.20   101.20            101.20     98.55      96.40   4.80
+#>    percent_change
+#> 1            4.94
+#> 2            9.63
+#> 3            2.88
+#> 4            1.76
+#> 5            4.98
+#> 6            1.98
+#> 7            4.99
+#> 8           -1.52
+#> 9            1.40
+#> 10          19.63
+#> 11           4.88
+#> 12           4.77
+#> 13           2.77
+#> 14           4.97
+#> 15           3.34
+#> 16          -3.01
+#> 17           4.38
+#> 18           1.76
+#> 19           2.26
+#> 20           3.02
+#> 21           6.16
+#> 22           4.19
+#> 23           4.98
+#> 24           6.31
+#> 25           0.65
+#> 26           7.02
+#> 27           2.35
+#> 28           1.00
+#> 29          -1.30
+#> 30           0.63
+#> 31           6.46
+#> 32           3.42
+#> 33           0.01
+#> 34           9.92
+#> 35           4.92
+#> 36          -4.97
+#> 37           0.74
+#> 38          -0.86
+#> 39          -1.24
+#> 40           4.88
+#> 41           1.44
+#> 42           7.23
+#> 43           5.89
+#> 44           4.90
+#> 45           2.09
+#> 46          -1.06
+#> 47           0.82
+#> 48          10.00
+#> 49           4.99
+#> 50           5.20
+#> 51           6.39
+#> 52          -3.44
+#> 53           4.99
+#> 54           0.86
+#> 55           4.56
+#> 56           2.55
+#> 57          -0.47
+#> 58           4.55
+#> 59           2.24
+#> 60           4.98
 
 # retain original column names as returned by NSE
 nse_stock_year_high(clean_names = FALSE)
-#>        symbol                             symbolDesc         dt   value    year
-#> 1  ADANIGREEN             Adani Green Energy Limited 2020-06-15  363.45  363.45
-#> 2  ALEMBICLTD                        Alembic Limited 2020-06-15   89.40   89.40
-#> 3    ALOKINDS                Alok Industries Limited 2020-06-15   31.30   31.30
-#> 4  ANDHRACEMT                 Andhra Cements Limited 2020-06-15    6.40    6.40
-#> 5      APLLTD        Alembic Pharmaceuticals Limited 2020-05-21  943.80  943.80
-#> 6    ASTRAZEN       AstraZeneca Pharma India Limited 2020-06-08 3574.15 3574.15
-#> 7   BAYERCROP              Bayer Cropscience Limited 2020-06-09 5723.00 5723.00
-#> 8         BCG                Brightcom Group Limited 2020-06-15   11.95   11.95
-#> 9   BIRLATYRE                    Birla Tyres Limited 2020-06-15   28.45   28.45
-#> 10    DHANUKA               Dhanuka Agritech Limited 2020-06-15  748.05  748.05
-#> 11   DNAMEDIA     Diligent Media Corporation Limited 2020-06-12    0.70    0.70
-#> 12 GAMMNINFRA Gammon Infrastructure Projects Limited 2020-05-15    0.65    0.65
-#> 13 GMMPFAUDLR                   GMM Pfaudler Limited 2020-06-10 4629.55 4629.55
-#> 14     GOENKA      Goenka Diamond and Jewels Limited 2020-06-15    1.10    1.10
-#> 15   GRANULES                 Granules India Limited 2020-06-12  224.45  224.45
-#> 16 HEXATRADEX                    Hexa Tradex Limited 2020-06-15   16.85   16.85
-#> 17 HOTELRUGBY                    Hotel Rugby Limited 2020-06-15    1.30    1.30
-#> 18 JMTAUTOLTD                       JMT Auto Limited 2020-06-15    4.00    4.00
-#> 19   JUBILANT         Jubilant Life Sciences Limited 2020-06-15  695.90  695.90
-#> 20       KSCL            Kaveri Seed Company Limited 2019-09-25  620.00  620.00
-#> 21 MANAKALUCO     Manaksia Aluminium Company Limited 2020-06-15   10.65   10.65
-#> 22   MARKSANS                Marksans Pharma Limited 2020-06-09   33.75   33.75
-#> 23    METKORE    Metkore Alloys & Industries Limited 2020-06-15    0.60    0.60
-#> 24     MITTAL              Mittal Life Style Limited 2020-06-15  151.80  151.80
-#> 25       MOIL                           MOIL Limited 2020-01-13  170.00  170.00
-#> 26 MOREPENLAB           Morepen Laboratories Limited 2019-09-24   26.60   26.60
-#> 27 MOTOGENFIN    The Motor & General Finance Limited 2020-06-11   53.65   53.65
-#> 28    NECLIFE            Nectar Lifesciences Limited 2020-06-11   19.10   19.10
-#> 29  NETWORK18  Network18 Media & Investments Limited 2020-06-15   38.15   38.15
-#> 30 OPTOCIRCUI          Opto Circuits (India) Limited 2020-06-15   10.60   10.60
-#> 31      PIIND                  PI Industries Limited 2020-05-29 1689.00 1689.00
-#> 32   PNBGILTS                      PNB Gilts Limited 2019-07-17   39.80   39.80
-#> 33 PRAKASHSTL               Prakash Steelage Limited 2020-06-15    1.45    1.45
-#> 34  PUNJLLOYD                     Punj Lloyd Limited 2019-07-01    1.60    1.60
-#> 35   RAJRAYON           Raj Rayon Industries Limited 2020-06-15    0.30    0.30
-#> 36     RALLIS                   Rallis India Limited 2020-02-20  272.00  272.00
-#> 37   RAMSARUP            Ramsarup Industries Limited 2020-04-28    0.70    0.70
-#> 38   RELIANCE            Reliance Industries Limited 2020-06-15 1648.55 1648.55
-#> 39      RUCHI          Ruchi Soya Industries Limited 2020-06-15 1028.70 1028.70
-#> 40  RUCHINFRA           Ruchi Infrastructure Limited 2020-06-15   14.60   14.60
-#> 41  SAGARDEEP               Sagardeep Alloys Limited 2020-06-15   96.90   96.90
-#> 42 SHREDIGCEM           Shree Digvijay Cement Co.Ltd 2020-06-15   46.90   46.90
-#> 43   SUMICHEM        Sumitomo Chemical India Limited 2020-06-15  309.00  309.00
-#> 44     SYNCOM              Syncom Healthcare Limited 2020-06-15    2.00    2.00
-#> 45   TATACOMM            Tata Communications Limited 2020-06-15  587.15  587.15
-#> 46 TV18BRDCST                 TV18 Broadcast Limited 2020-06-15   38.30   38.30
-#> 47  ZENITHBIR           Zenith Birla (India) Limited 2020-06-15    1.05    1.05
-#>        ltp value_old    prev change pChange
-#> 1   363.45    351.00  346.15  17.30    5.00
-#> 2    79.30     77.45   77.25   2.05    2.65
-#> 3    31.30     29.85   29.85   1.45    4.86
-#> 4     6.40      6.10    6.10   0.30    4.92
-#> 5   907.50    915.00  889.95  17.55    1.97
-#> 6  3490.00   3493.95 3431.90  58.10    1.69
-#> 7  5690.00   5600.00 5491.00 199.00    3.62
-#> 8    11.95     11.40   11.40   0.55    4.82
-#> 9    28.45     27.10   27.10   1.35    4.98
-#> 10  735.00    698.00  690.90  44.10    6.38
-#> 11    0.65      0.70    0.65   0.00    0.00
-#> 12    0.65      0.65    0.60   0.05    8.33
-#> 13 4465.30   4619.85 4422.80  42.50    0.96
-#> 14    1.10      1.05    1.05   0.05    4.76
-#> 15  216.05    217.40  207.55   8.50    4.10
-#> 16   15.45     16.05   16.05  -0.60   -3.74
-#> 17    1.30      1.25    1.25   0.05    4.00
-#> 18    4.00      3.85    3.85   0.15    3.90
-#> 19  655.00    691.00  673.95 -18.95   -2.81
-#> 20  620.00    575.00  547.90  72.10   13.16
-#> 21   10.30     10.15   10.15   0.15    1.48
-#> 22   33.75     33.45   32.15   1.60    4.98
-#> 23    0.60      0.55    0.55   0.05    9.09
-#> 24  151.75    150.45  150.05   1.70    1.13
-#> 25  161.30    169.95  148.85  12.45    8.36
-#> 26   26.60     23.95   22.20   4.40   19.82
-#> 27   48.95     51.00   49.10  -0.15   -0.31
-#> 28   19.10     18.05   15.95   3.15   19.75
-#> 29   38.15     36.35   36.35   1.80    4.95
-#> 30   10.60     10.10   10.10   0.50    4.95
-#> 31 1610.00   1650.00 1580.65  29.35    1.86
-#> 32   36.55     39.60   37.00  -0.45   -1.22
-#> 33    1.45      1.40    1.40   0.05    3.57
-#> 34    1.60      1.60    1.55   0.05    3.23
-#> 35    0.30      0.25    0.25   0.05   20.00
-#> 36  266.50    256.00  251.50  15.00    5.96
-#> 37    0.70      0.70    0.65   0.05    7.69
-#> 38 1614.05   1626.95 1614.55  -0.50   -0.03
-#> 39 1028.70    979.75  979.75  48.95    5.00
-#> 40   14.60     13.95   13.95   0.65    4.66
-#> 41   95.50     93.00   92.50   3.00    3.24
-#> 42   42.20     46.90   44.95  -2.75   -6.12
-#> 43  298.90    299.00  297.00   1.90    0.64
-#> 44    2.00      1.95    1.95   0.05    2.56
-#> 45  577.20    533.80  533.80  43.40    8.13
-#> 46   36.65     33.75   33.20   3.45   10.39
-#> 47    1.05      1.00    1.00   0.05    5.00
+#>        symbol
+#> 1       AARON
+#> 2         ACE
+#> 3  ADANIPORTS
+#> 4  AMARAJABAT
+#> 5   ASHIMASYN
+#> 6        BEPL
+#> 7  BIOFILCHEM
+#> 8     CGPOWER
+#> 9  CHAMBLFERT
+#> 10   DBREALTY
+#> 11       DHFL
+#> 12      DIXON
+#> 13   EIDPARRY
+#> 14        EKC
+#> 15  GALLISPAT
+#> 16  GINNIFILA
+#> 17     GRASIM
+#> 18  GUJGASLTD
+#> 19        HCG
+#> 20   HINDALCO
+#> 21    ICICIGI
+#> 22   INDIACEM
+#> 23  INTELLECT
+#> 24 JINDALSTEL
+#> 25      JSWHL
+#> 26   JSWSTEEL
+#> 27 KAJARIACER
+#> 28      KARDA
+#> 29 KEYFINSERV
+#> 30        M50
+#> 31    MAANALU
+#> 32     NAUKRI
+#> 33 NCPSESDL24
+#> 34   ONMOBILE
+#> 35 ORCHPHARMA
+#> 36  PALREDTEC
+#> 37       PGEL
+#> 38       PGHL
+#> 39     PILITA
+#> 40 PLASTIBLEN
+#> 41      PURVA
+#> 42   RELIGARE
+#> 43    RKFORGE
+#> 44       ROML
+#> 45    SHRADHA
+#> 46    SKIPPER
+#> 47 SOMANYCERA
+#> 48       SPYL
+#> 49      TANLA
+#> 50  TATASTEEL
+#> 51 TATASTLBSL
+#> 52    TIINDIA
+#> 53      TOTAL
+#> 54 TPLPLASTEH
+#> 55   TREJHARA
+#> 56    TRIDENT
+#> 57  UTINEXT50
+#> 58   VIDEOIND
+#> 59  VISHWARAJ
+#> 60       VSSL
+#>                                                                symbolDesc
+#> 1                                                Aaron Industries Limited
+#> 2                                   Action Construction Equipment Limited
+#> 3                           Adani Ports and Special Economic Zone Limited
+#> 4                                            Amara Raja Batteries Limited
+#> 5                                                          Ashima Limited
+#> 6                                   Bhansali Engineering Polymers Limited
+#> 7                              Biofil Chemicals & Pharmaceuticals Limited
+#> 8                               CG Power and Industrial Solutions Limited
+#> 9                                 Chambal Fertilizers & Chemicals Limited
+#> 10                                                     D B Realty Limited
+#> 11                              Dewan Housing Finance Corporation Limited
+#> 12                                     Dixon Technologies (India) Limited
+#> 13                                                EID Parry India Limited
+#> 14                                         Everest Kanto Cylinder Limited
+#> 15                                                 Gallantt Ispat Limited
+#> 16                                                Ginni Filaments Limited
+#> 17                                              Grasim Industries Limited
+#> 18                                                    Gujarat Gas Limited
+#> 19                                  Healthcare Global Enterprises Limited
+#> 20                                            Hindalco Industries Limited
+#> 21                        ICICI Lombard General Insurance Company Limited
+#> 22                                              The India Cements Limited
+#> 23                                         Intellect Design Arena Limited
+#> 24                                           Jindal Steel & Power Limited
+#> 25                                                   JSW Holdings Limited
+#> 26                                                      JSW Steel Limited
+#> 27                                               Kajaria Ceramics Limited
+#> 28                                            Karda Constructions Limited
+#> 29                                     Keynote Financial Services Limited
+#> 30          Motilal Oswal Mutual Fund - Motilal Oswal MOSt Shares M50 ETF
+#> 31                                                 Maan Aluminium Limited
+#> 32                                              Info Edge (India) Limited
+#> 33  Nippon India Mutual Fund-Nippon India ETF Nifty CPSE Bond Plus SDL-24
+#> 34                                                OnMobile Global Limited
+#> 35                                                  Orchid Pharma Limited
+#> 36                                            Palred Technologies Limited
+#> 37                                                PG Electroplast Limited
+#> 38                                        Procter & Gamble Health Limited
+#> 39                                          PIL ITALICA LIFESTYLE LIMITED
+#> 40                                             Plastiblends India Limited
+#> 41                                                    Puravankara Limited
+#> 42                                           Religare Enterprises Limited
+#> 43                                            Ramkrishna Forgings Limited
+#> 44                                                  Raj Oil Mills Limited
+#> 45                                          Shradha Infraprojects Limited
+#> 46                                                        Skipper Limited
+#> 47                                                Somany Ceramics Limited
+#> 48                                           Shekhawati Poly-Yarn Limited
+#> 49                                                Tanla Platforms Limited
+#> 50                                                     Tata Steel Limited
+#> 51                                                 Tata Steel Bsl Limited
+#> 52                                      Tube Investments of India Limited
+#> 53                                        Total Transport Systems Limited
+#> 54                                                   TPL Plastech Limited
+#> 55                                             TREJHARA SOLUTIONS LIMITED
+#> 56                                                        Trident Limited
+#> 57 UTI Mutual Fund - UTI NIfty Next 50 Exchange Traded Fund - UTI NIFTY N
+#> 58                                            Videocon Industries Limited
+#> 59                                     Vishwaraj Sugar Industries Limited
+#> 60                                        Vardhman Special Steels Limited
+#>            dt    value     year      ltp value_old     prev change pChange
+#> 1  2020-11-25    64.75    64.75    64.75     61.70    61.70   3.05    4.94
+#> 2  2020-11-18   106.40   106.40   101.30     97.60    92.40   8.90    9.63
+#> 3  2020-11-25   413.00   413.00   410.45    404.70   398.95  11.50    2.88
+#> 4  2020-11-25   900.00   900.00   889.55    899.00   874.20  15.35    1.76
+#> 5  2020-11-25    10.55    10.55    10.55     10.35    10.05   0.50    4.98
+#> 6  2020-11-25   128.00   128.00   126.00    127.60   123.55   2.45    1.98
+#> 7  2020-11-25   208.35   208.35   208.35    198.45   198.45   9.90    4.99
+#> 8  2020-11-25    41.00    41.00    39.00     39.65    39.60  -0.60   -1.52
+#> 9  2020-11-25   196.00   196.00   192.50    194.00   189.85   2.65    1.40
+#> 10 2019-12-03    12.80    12.80    12.80     12.50    10.70   2.10   19.63
+#> 11 2020-11-25    25.80    25.80    25.80     24.60    24.60   1.20    4.88
+#> 12 2020-11-24 11490.00 11490.00 11430.00  11000.00 10909.90 520.10    4.77
+#> 13 2020-11-24   342.55   342.55   336.00    332.40   326.95   9.05    2.77
+#> 14 2020-11-25    46.45    46.45    46.45     45.35    44.25   2.20    4.97
+#> 15 2020-06-25    36.25    36.25    32.50     35.80    31.45   1.05    3.34
+#> 16 2020-11-25    18.90    18.90    17.70     18.55    18.25  -0.55   -3.01
+#> 17 2020-11-25   881.00   881.00   880.00    873.80   843.10  36.90    4.38
+#> 18 2020-11-25   348.00   348.00   344.00    345.55   338.05   5.95    1.76
+#> 19 2020-11-25   149.90   149.90   147.00    145.00   143.75   3.25    2.26
+#> 20 2020-11-25   231.25   231.25   230.20    230.00   223.45   6.75    3.02
+#> 21 2019-12-26  1468.00  1468.00  1468.00   1440.40  1382.85  85.15    6.16
+#> 22 2020-11-24   163.85   163.85   155.50    161.90   149.25   6.25    4.19
+#> 23 2020-11-25   277.00   277.00   277.00    270.00   263.85  13.15    4.98
+#> 24 2020-11-25   250.80   250.80   250.05    248.00   235.20  14.85    6.31
+#> 25 2020-11-25  3560.00  3560.00  3445.50   3499.00  3423.40  22.10    0.65
+#> 26 2020-11-17   362.20   362.20   362.00    350.50   338.25  23.75    7.02
+#> 27 2020-11-24   632.30   632.30   632.30    630.95   617.80  14.50    2.35
+#> 28 2020-10-12   114.00   114.00   111.60    112.05   110.50   1.10    1.00
+#> 29 2020-11-25   117.00   117.00   110.00    111.55   111.45  -1.45   -1.30
+#> 30 2020-11-14   128.95   128.95   127.54    128.95   126.74   0.80    0.63
+#> 31 2020-11-25    84.60    84.60    83.25     83.05    78.20   5.05    6.46
+#> 32 2020-11-25  4196.95  4196.95  4180.00   4091.00  4041.80 138.20    3.42
+#> 33 2020-11-18   123.26   123.26   102.73    102.74   102.70   0.01    0.01
+#> 34 2020-09-15    56.50    56.50    56.50     52.40    51.40   5.10    9.92
+#> 35 2020-11-25    40.50    40.50    40.50     38.60    38.60   1.90    4.92
+#> 36 2020-11-25    41.15    41.15    37.25     39.20    39.20  -1.95   -4.97
+#> 37 2020-11-17   155.00   155.00   150.00    153.10   148.90   1.10    0.74
+#> 38 2020-11-24  6484.85  6484.85  6360.00   6479.20  6414.90 -54.90   -0.86
+#> 39 2020-11-23     8.35     8.35     7.95      8.30     8.05  -0.10   -1.24
+#> 40 2020-11-25   269.00   269.00   265.65    264.80   253.30  12.35    4.88
+#> 41 2020-11-25    78.85    78.85    77.35     78.30    76.25   1.10    1.44
+#> 42 2020-11-25    67.35    67.35    64.55     62.70    60.20   4.35    7.23
+#> 43 2020-01-20   418.90   418.90   411.95    415.10   389.05  22.90    5.89
+#> 44 2020-11-25    16.05    16.05    16.05     15.30    15.30   0.75    4.90
+#> 45 2020-11-23    62.00    62.00    61.00     62.00    59.75   1.25    2.09
+#> 46 2020-11-25    58.90    58.90    56.00     57.50    56.60  -0.60   -1.06
+#> 47 2020-11-25   272.20   272.20   269.35    272.00   267.15   2.20    0.82
+#> 48 2020-11-25     0.55     0.55     0.55      0.50     0.50   0.05   10.00
+#> 49 2020-11-25   583.50   583.50   583.50    555.90   555.75  27.75    4.99
+#> 50 2020-11-25   571.10   571.10   569.40    558.65   541.25  28.15    5.20
+#> 51 2020-11-25    35.00    35.00    34.95     34.00    32.85   2.10    6.39
+#> 52 2020-11-24   857.95   857.95   808.00    857.50   836.80 -28.80   -3.44
+#> 53 2020-11-25    60.00    60.00    60.00     59.80    57.15   2.85    4.99
+#> 54 2020-11-25   152.40   152.40   146.20    151.90   144.95   1.25    0.86
+#> 55 2020-11-25    32.20    32.20    32.10     30.70    30.70   1.40    4.56
+#> 56 2020-11-23     8.55     8.55     8.05      8.55     7.85   0.20    2.55
+#> 57 2020-11-25   320.00   320.00   309.50    320.00   310.97  -1.47   -0.47
+#> 58 2020-11-25     5.75     5.75     5.75      5.50     5.50   0.25    4.55
+#> 59 2020-11-09   132.00   132.00   123.50    129.80   120.80   2.70    2.24
+#> 60 2020-11-25   101.20   101.20   101.20     98.55    96.40   4.80    4.98
 ```
 
 ##### Most actively traded stocks in a month
 
 ``` r
 nse_stock_most_traded()
-#>                       security share_turnover traded_quantity no_of_trades
-#> 1      Reliance Industries Ltd           6.82            4620      9245543
-#> 2       Hindustan Unilever Ltd           6.25            3185      5752204
-#> 3            Bajaj Finance Ltd           4.14            2057      8232909
-#> 4                HDFC Bank Ltd           3.43            3832      7054716
-#> 5               ICICI Bank Ltd           3.36           10513      9288909
-#> 6                AXIS Bank Ltd           3.15            8265      8308649
-#> 7            Bharti Airtel Ltd           3.00            5347      5774781
-#> 8                     HDFC Ltd           2.46            1518      4924321
-#> 9      Maruti Suzuki India Ltd           2.14             426      3320762
-#> 10         State Bank Of India           2.03           12470      7371875
-#> 11 TOTAL of Top Ten securities          36.78           52234     69274669
-#> 12                       TOTAL         100.00          493359    341796702
-#>    avg_daily_turnonver   turnover
-#> 1              3591.40   68236.63
-#> 2              3292.50   62557.46
-#> 3              2179.74   41415.04
-#> 4              1808.33   34358.27
-#> 5              1767.89   33589.97
-#> 6              1658.21   31506.01
-#> 7              1577.88   29979.79
-#> 8              1293.73   24580.89
-#> 9              1125.83   21390.76
-#> 10             1069.64   20323.16
-#> 11            19365.16  367937.97
-#> 12            52655.61 1000456.50
+#>                         security share_turnover traded_quantity no_of_trades
+#> 1        Reliance Industries Ltd           5.10            2598      6836160
+#> 2   Tata Consultancy Service Ltd           3.20            1286      4210702
+#> 3          Bajaj Finance Limited           3.07            1013      4243265
+#> 4                Infosys Limited           2.88            2850      5107093
+#> 5                  HDFC Bank Ltd           2.79            2556      4705854
+#> 6          Indusind Bank Limited           2.23            4018      4743872
+#> 7              Axis Bank Limited           2.19            5011      4881896
+#> 8                 ICICI Bank Ltd           2.15            5899      5031275
+#> 9  Dr Reddy Laboratories Limited           2.09             452      2265161
+#> 10                  HDFC Limited           2.07            1155      4201521
+#> 11   TOTAL of Top Ten securities          27.77           26839     46226799
+#> 12                         TOTAL         100.00          418798    318193019
+#>    avg_daily_turnonver turnover
+#> 1              2670.12    56073
+#> 2              1675.49    35185
+#> 3              1603.95    33683
+#> 4              1507.99    31668
+#> 5              1458.27    30624
+#> 6              1165.12    24468
+#> 7              1147.84    24105
+#> 8              1124.54    23615
+#> 9              1095.54    23006
+#> 10             1082.59    22734
+#> 11            14531.46   305161
+#> 12            52327.80  1098884
 
 # retain original column names as returned by NSE
 nse_stock_most_traded(clean_names = FALSE)
-#>                        skipped sharetotal trdQty nooftrades avgdailyturn
-#> 1      Reliance Industries Ltd       6.82   4620    9245543      3591.40
-#> 2       Hindustan Unilever Ltd       6.25   3185    5752204      3292.50
-#> 3            Bajaj Finance Ltd       4.14   2057    8232909      2179.74
-#> 4                HDFC Bank Ltd       3.43   3832    7054716      1808.33
-#> 5               ICICI Bank Ltd       3.36  10513    9288909      1767.89
-#> 6                AXIS Bank Ltd       3.15   8265    8308649      1658.21
-#> 7            Bharti Airtel Ltd       3.00   5347    5774781      1577.88
-#> 8                     HDFC Ltd       2.46   1518    4924321      1293.73
-#> 9      Maruti Suzuki India Ltd       2.14    426    3320762      1125.83
-#> 10         State Bank Of India       2.03  12470    7371875      1069.64
-#> 11 TOTAL of Top Ten securities      36.78  52234   69274669     19365.16
-#> 12                       TOTAL     100.00 493359  341796702     52655.61
-#>      turnover
-#> 1    68236.63
-#> 2    62557.46
-#> 3    41415.04
-#> 4    34358.27
-#> 5    33589.97
-#> 6    31506.01
-#> 7    29979.79
-#> 8    24580.89
-#> 9    21390.76
-#> 10   20323.16
-#> 11  367937.97
-#> 12 1000456.50
+#>                          skipped sharetotal trdQty nooftrades avgdailyturn
+#> 1        Reliance Industries Ltd       5.10   2598    6836160      2670.12
+#> 2   Tata Consultancy Service Ltd       3.20   1286    4210702      1675.49
+#> 3          Bajaj Finance Limited       3.07   1013    4243265      1603.95
+#> 4                Infosys Limited       2.88   2850    5107093      1507.99
+#> 5                  HDFC Bank Ltd       2.79   2556    4705854      1458.27
+#> 6          Indusind Bank Limited       2.23   4018    4743872      1165.12
+#> 7              Axis Bank Limited       2.19   5011    4881896      1147.84
+#> 8                 ICICI Bank Ltd       2.15   5899    5031275      1124.54
+#> 9  Dr Reddy Laboratories Limited       2.09    452    2265161      1095.54
+#> 10                  HDFC Limited       2.07   1155    4201521      1082.59
+#> 11   TOTAL of Top Ten securities      27.77  26839   46226799     14531.46
+#> 12                         TOTAL     100.00 418798  318193019     52327.80
+#>    turnover
+#> 1     56073
+#> 2     35185
+#> 3     33683
+#> 4     31668
+#> 5     30624
+#> 6     24468
+#> 7     24105
+#> 8     23615
+#> 9     23006
+#> 10    22734
+#> 11   305161
+#> 12  1098884
 ```
 
 ### Futures & Options
@@ -576,96 +811,85 @@ nse_stock_most_traded(clean_names = FALSE)
 ``` r
 nse_fo_top_gainers()
 #>        symbol series last_corp_announcement_date
-#> 1  BALKRISIND     EQ                  2020-02-24
-#> 2   LICHSGFIN     EQ                  2019-08-16
-#> 3  JINDALSTEL     EQ                  2019-09-19
-#> 4    GODREJCP     EQ                  2020-02-05
-#> 5    HDFCBANK     EQ                  2019-09-19
-#> 6        HDFC     EQ                  2020-07-09
-#> 7   ICICIBANK     EQ                  2019-07-22
-#> 8     SBILIFE     EQ                  2019-04-03
-#> 9  AMARAJABAT     EQ                  2020-03-19
-#> 10   JSWSTEEL     EQ                  2020-07-06
-#>                                                     last_corp_announcement
-#> 1                                       Interim Dividend - Rs 16 Per Share
-#> 2                     Annual General Meeting/ Dividend - Rs 7.60 Per Share
-#> 3                                                   Annual General Meeting
-#> 4                                        Interim Dividend - Rs 2 Per Share
-#> 5  Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share
-#> 6                        Annual General Meeting/Dividend - Rs 21 Per Share
-#> 7                         Annual General Meeting/Dividend - Re 1 Per Share
-#> 8                                        Interim Dividend - Rs 2 Per Share
-#> 9                                        Interim Dividend - Rs 5 Per Share
-#> 10                                               Dividend - Rs 2 Per Share
-#>    open_price high_price low_price last_traded_price prev_close_price
-#> 1     1159.00    1208.00   1148.05           1199.30          1140.00
-#> 2      275.45     295.35    273.60            284.15           270.40
-#> 3      139.50     146.75    138.15            142.30           135.90
-#> 4      615.00     648.45    615.00            635.00           608.75
-#> 5      975.00     993.95    952.00            989.15           949.85
-#> 6     1785.00    1834.00   1768.05           1820.00          1751.65
-#> 7      342.25     347.90    326.05            342.40           331.10
-#> 8      751.00     770.70    742.40            769.90           745.30
-#> 9      652.00     672.00    652.00            666.00           645.00
-#> 10     189.00     195.95    185.75            189.00           183.75
-#>    percent_change traded_quantity turnover_in_lakhs
-#> 1            5.20         1337043          15825.64
-#> 2            5.09        15494933          44203.94
-#> 3            4.71        28554167          40906.70
-#> 4            4.31         4980121          31845.88
-#> 5            4.14        22700113         222131.96
-#> 6            3.90         7453412         134946.26
-#> 7            3.41        57511276         195590.10
-#> 8            3.30         1883911          14249.15
-#> 9            3.26         1886933          12540.75
-#> 10           2.86        23464025          45001.65
+#> 1     SIEMENS     EQ                  2020-02-03
+#> 2        SAIL     EQ                  2020-10-14
+#> 3    JSWSTEEL     EQ                  2020-07-06
+#> 4  JINDALSTEL     EQ                  2020-09-23
+#> 5     ICICIGI     EQ                  2019-10-31
+#> 6       L&TFH     EQ                  2020-07-20
+#> 7   TATASTEEL     EQ                  2020-08-06
+#> 8  NATIONALUM     EQ                  2020-12-01
+#> 9  BANKBARODA     EQ                  2020-07-22
+#> 10   TATACHEM     EQ                  2020-06-22
+#>                               last_corp_announcement open_price high_price
+#> 1                          Dividend - Rs 7 Per Share    1405.00    1533.90
+#> 2                             Annual General Meeting      43.10      46.80
+#> 3                          Dividend - Rs 2 Per Share     338.50     362.20
+#> 4                             Annual General Meeting     234.60     250.80
+#> 5                  Interim Dividend - Rs 3.50 Per Sh    1394.00    1468.00
+#> 6                             Annual General Meeting      74.70      78.80
+#> 7                         Dividend - Rs 10 Per Share     546.00     571.10
+#> 8               Interim Dividend - Rs 0.50 Per Share      35.95      38.15
+#> 9                             Annual General Meeting      49.10      51.50
+#> 10 Annual General Meeting/Dividend - Rs 11 Per Share     370.10     385.00
+#>    low_price last_traded_price prev_close_price percent_change traded_quantity
+#> 1    1396.15           1532.95          1364.25          12.37         9591646
+#> 2      42.80             46.55            43.05           8.13        60920144
+#> 3     336.00            362.00           338.25           7.02        10967276
+#> 4     232.25            250.05           235.20           6.31        12732331
+#> 5    1390.00           1468.00          1382.85           6.16         2679932
+#> 6      73.90             78.70            74.35           5.85        34322810
+#> 7     541.25            569.40           541.25           5.20        22570185
+#> 8      35.50             37.60            35.75           5.17        26513634
+#> 9      48.25             51.30            49.05           4.59        55805690
+#> 10    365.40            384.75           368.05           4.54         4880589
+#>    turnover_in_lakhs
+#> 1          142744.79
+#> 2           27420.16
+#> 3           38358.05
+#> 4           30835.16
+#> 5           38528.04
+#> 6           26291.27
+#> 7          125512.80
+#> 8            9823.30
+#> 9           27847.04
+#> 10          18333.93
 
 # retain original column names as returned by NSE
 nse_fo_top_gainers(clean_names = FALSE)
 #>        symbol series lastCorpAnnouncementDate
-#> 1  BALKRISIND     EQ               2020-02-24
-#> 2   LICHSGFIN     EQ               2019-08-16
-#> 3  JINDALSTEL     EQ               2019-09-19
-#> 4    GODREJCP     EQ               2020-02-05
-#> 5    HDFCBANK     EQ               2019-09-19
-#> 6        HDFC     EQ               2020-07-09
-#> 7   ICICIBANK     EQ               2019-07-22
-#> 8     SBILIFE     EQ               2019-04-03
-#> 9  AMARAJABAT     EQ               2020-03-19
-#> 10   JSWSTEEL     EQ               2020-07-06
-#>                                                       lastCorpAnnouncement
-#> 1                                       Interim Dividend - Rs 16 Per Share
-#> 2                     Annual General Meeting/ Dividend - Rs 7.60 Per Share
-#> 3                                                   Annual General Meeting
-#> 4                                        Interim Dividend - Rs 2 Per Share
-#> 5  Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share
-#> 6                        Annual General Meeting/Dividend - Rs 21 Per Share
-#> 7                         Annual General Meeting/Dividend - Re 1 Per Share
-#> 8                                        Interim Dividend - Rs 2 Per Share
-#> 9                                        Interim Dividend - Rs 5 Per Share
-#> 10                                               Dividend - Rs 2 Per Share
-#>    openPrice highPrice lowPrice     ltp previousPrice netPrice tradedQuantity
-#> 1    1159.00   1208.00  1148.05 1199.30       1140.00     5.20        1337043
-#> 2     275.45    295.35   273.60  284.15        270.40     5.09       15494933
-#> 3     139.50    146.75   138.15  142.30        135.90     4.71       28554167
-#> 4     615.00    648.45   615.00  635.00        608.75     4.31        4980121
-#> 5     975.00    993.95   952.00  989.15        949.85     4.14       22700113
-#> 6    1785.00   1834.00  1768.05 1820.00       1751.65     3.90        7453412
-#> 7     342.25    347.90   326.05  342.40        331.10     3.41       57511276
-#> 8     751.00    770.70   742.40  769.90        745.30     3.30        1883911
-#> 9     652.00    672.00   652.00  666.00        645.00     3.26        1886933
-#> 10    189.00    195.95   185.75  189.00        183.75     2.86       23464025
-#>    turnoverInLakhs
-#> 1         15825.64
-#> 2         44203.94
-#> 3         40906.70
-#> 4         31845.88
-#> 5        222131.96
-#> 6        134946.26
-#> 7        195590.10
-#> 8         14249.15
-#> 9         12540.75
-#> 10        45001.65
+#> 1     SIEMENS     EQ               2020-02-03
+#> 2        SAIL     EQ               2020-10-14
+#> 3    JSWSTEEL     EQ               2020-07-06
+#> 4  JINDALSTEL     EQ               2020-09-23
+#> 5     ICICIGI     EQ               2019-10-31
+#> 6       L&TFH     EQ               2020-07-20
+#> 7   TATASTEEL     EQ               2020-08-06
+#> 8  NATIONALUM     EQ               2020-12-01
+#> 9  BANKBARODA     EQ               2020-07-22
+#> 10   TATACHEM     EQ               2020-06-22
+#>                                 lastCorpAnnouncement openPrice highPrice
+#> 1                          Dividend - Rs 7 Per Share   1405.00   1533.90
+#> 2                             Annual General Meeting     43.10     46.80
+#> 3                          Dividend - Rs 2 Per Share    338.50    362.20
+#> 4                             Annual General Meeting    234.60    250.80
+#> 5                  Interim Dividend - Rs 3.50 Per Sh   1394.00   1468.00
+#> 6                             Annual General Meeting     74.70     78.80
+#> 7                         Dividend - Rs 10 Per Share    546.00    571.10
+#> 8               Interim Dividend - Rs 0.50 Per Share     35.95     38.15
+#> 9                             Annual General Meeting     49.10     51.50
+#> 10 Annual General Meeting/Dividend - Rs 11 Per Share    370.10    385.00
+#>    lowPrice     ltp previousPrice netPrice tradedQuantity turnoverInLakhs
+#> 1   1396.15 1532.95       1364.25    12.37        9591646       142744.79
+#> 2     42.80   46.55         43.05     8.13       60920144        27420.16
+#> 3    336.00  362.00        338.25     7.02       10967276        38358.05
+#> 4    232.25  250.05        235.20     6.31       12732331        30835.16
+#> 5   1390.00 1468.00       1382.85     6.16        2679932        38528.04
+#> 6     73.90   78.70         74.35     5.85       34322810        26291.27
+#> 7    541.25  569.40        541.25     5.20       22570185       125512.80
+#> 8     35.50   37.60         35.75     5.17       26513634         9823.30
+#> 9     48.25   51.30         49.05     4.59       55805690        27847.04
+#> 10   365.40  384.75        368.05     4.54        4880589        18333.93
 ```
 
 ### Pre Open Market Data
@@ -674,252 +898,252 @@ nse_fo_top_gainers(clean_names = FALSE)
 
 ``` r
 nse_preopen_nifty_bank()
-#>        symbol series corp_action_date                          corp_action
-#> 1  INDUSINDBK     EQ             <NA>                                 <NA>
-#> 2    AXISBANK     EQ             <NA>                                 <NA>
-#> 3  BANDHANBNK     EQ             <NA>                                 <NA>
-#> 4   ICICIBANK     EQ             <NA>                                 <NA>
-#> 5     RBLBANK     EQ       2020-03-23 INTERIM DIVIDEND - RS 1.50 PER SHARE
-#> 6  IDFCFIRSTB     EQ             <NA>                                 <NA>
-#> 7  FEDERALBNK     EQ             <NA>                                 <NA>
-#> 8    HDFCBANK     EQ             <NA>                                 <NA>
-#> 9         PNB     EQ             <NA>                                 <NA>
-#> 10       SBIN     EQ             <NA>                                 <NA>
-#> 11 BANKBARODA     EQ             <NA>                                 <NA>
-#> 12  KOTAKBANK     EQ             <NA>                                 <NA>
-#>      price change percent_change prev_close quantity  value   mkt_cap year_high
-#> 1   510.00  19.45           3.96     490.55    87145 444.44  29598.42   1596.55
-#> 2   404.90  15.30           3.93     389.60    82484 333.98  87921.92    819.00
-#> 3   279.00  10.35           3.85     268.65    33888  94.55  11247.21    650.00
-#> 4   342.25  11.15           3.37     331.10   103305 353.56 214300.53    552.20
-#> 5   166.75   5.40           3.35     161.35   113787 189.74   7629.80    663.00
-#> 6    26.05   0.80           3.17      25.25   112162  29.22   5222.35     47.95
-#> 7    47.90   1.35           2.90      46.55    88409  42.35   9280.29    110.40
-#> 8   975.00  25.15           2.65     949.85    72578 707.64 411349.33   1305.50
-#> 9    34.50   0.85           2.53      33.65   169551  58.50   3854.22     83.40
-#> 10  178.00   4.30           2.48     173.70   146723 261.17  66658.82    373.80
-#> 11   47.00   1.05           2.29      45.95   129537  60.88   5520.19    132.85
-#> 12 1276.00  27.10           2.17    1248.90    17967 229.26 167193.56   1740.00
-#>    year_low sum_val sum_quantity fin_quantity sum_fin_quantity
-#> 1    235.55 2805.27      1156506        87145          1157536
-#> 2    286.00 2805.27      1156506        82484          1157536
-#> 3    152.20 2805.27      1156506        33888          1157536
-#> 4    268.30 2805.27      1156506       103305          1157536
-#> 5    101.55 2805.27      1156506       113787          1157536
-#> 6     17.65 2805.27      1156506       112162          1157536
-#> 7     35.70 2805.27      1156506        88409          1157536
-#> 8    738.75 2805.27      1156506        72578          1157536
-#> 9     26.30 2805.27      1156506       169551          1157536
-#> 10   149.45 2805.27      1156506       146723          1157536
-#> 11    36.00 2805.27      1156506       129537          1157536
-#> 12  1001.00 2805.27      1156506        17967          1157536
+#>        symbol series corp_action_date corp_action   price change percent_change
+#> 1  FEDERALBNK     EQ             <NA>        <NA>   59.90   0.70           1.18
+#> 2    HDFCBANK     EQ             <NA>        <NA> 1415.00  12.20           0.87
+#> 3     RBLBANK     EQ             <NA>        <NA>  228.55   1.95           0.86
+#> 4   KOTAKBANK     EQ             <NA>        <NA> 1875.00  12.55           0.67
+#> 5   ICICIBANK     EQ             <NA>        <NA>  475.10   2.40           0.51
+#> 6  BANDHANBNK     EQ             <NA>        <NA>  369.90   1.75           0.48
+#> 7        SBIN     EQ             <NA>        <NA>  244.00   1.00           0.41
+#> 8    AXISBANK     EQ             <NA>        <NA>  602.25   2.40           0.40
+#> 9  INDUSINDBK     EQ             <NA>        <NA>  857.00   1.95           0.23
+#> 10        PNB     EQ             <NA>        <NA>   31.40   0.05           0.16
+#> 11 BANKBARODA     EQ             <NA>        <NA>   49.10   0.05           0.10
+#> 12 IDFCFIRSTB     EQ             <NA>        <NA>   35.80   0.00           0.00
+#>    prev_close quantity  value   mkt_cap year_high year_low sum_val sum_quantity
+#> 1       59.20   169524 101.54  11809.31     96.95    35.70 1704.65       482740
+#> 2     1402.80    28611 404.85 609863.14   1464.40   738.75 1704.65       482740
+#> 3      226.60    24743  56.55   8653.43    391.20   101.55 1704.65       482740
+#> 4     1862.45    18038 338.21 272776.99   1948.40  1001.00 1704.65       482740
+#> 5      472.70    16769  79.67 325973.71    552.20   268.30 1704.65       482740
+#> 6      368.15    12859  47.57  24899.64    597.00   152.20 1704.65       482740
+#> 7      243.00    94976 231.74  93253.27    351.00   149.45 1704.65       482740
+#> 8      599.85    28166 169.63 148682.98    765.85   286.00 1704.65       482740
+#> 9      855.05    21933 187.97  48501.43   1596.55   235.55 1704.65       482740
+#> 10      31.35    96171  30.20   4130.33     67.70    26.30 1704.65       482740
+#> 11      49.05    75211  36.93   5892.61    108.25    36.00 1704.65       482740
+#> 12      35.80    55313  19.80   7513.59     47.95    17.65 1704.65       482740
+#>    fin_quantity sum_fin_quantity
+#> 1        169524           642314
+#> 2         28611           642314
+#> 3         24743           642314
+#> 4         18038           642314
+#> 5         16769           642314
+#> 6         12859           642314
+#> 7         94976           642314
+#> 8         28166           642314
+#> 9         21933           642314
+#> 10        96171           642314
+#> 11        75211           642314
+#> 12        55313           642314
 
 # retain original column names as returned by NSE
 nse_preopen_nifty(clean_names = FALSE)
 #>        symbol series        xDt
-#> 1  BAJFINANCE     EQ       <NA>
-#> 2  INDUSINDBK     EQ       <NA>
-#> 3    AXISBANK     EQ       <NA>
-#> 4   ICICIBANK     EQ       <NA>
-#> 5   EICHERMOT     EQ 2020-03-19
-#> 6        ZEEL     EQ       <NA>
-#> 7   TATASTEEL     EQ       <NA>
-#> 8  BAJAJFINSV     EQ       <NA>
-#> 9    JSWSTEEL     EQ       <NA>
-#> 10   HINDALCO     EQ       <NA>
-#> 11     GRASIM     EQ       <NA>
-#> 12        UPL     EQ       <NA>
-#> 13   HDFCBANK     EQ       <NA>
-#> 14       VEDL     EQ       <NA>
-#> 15       SBIN     EQ       <NA>
-#> 16       BPCL     EQ 2020-03-23
-#> 17   INFRATEL     EQ 2020-05-05
-#> 18         LT     EQ 2020-03-24
-#> 19  KOTAKBANK     EQ       <NA>
-#> 20 ADANIPORTS     EQ       <NA>
-#> 21       INFY     EQ 2020-05-29
-#> 22     MARUTI     EQ       <NA>
-#> 23        ITC     EQ       <NA>
-#> 24       HDFC     EQ       <NA>
-#> 25       NTPC     EQ 2020-03-26
-#> 26  COALINDIA     EQ 2020-03-19
-#> 27        M&M     EQ       <NA>
-#> 28   RELIANCE     EQ 2020-05-13
-#> 29      TITAN     EQ       <NA>
-#> 30        TCS     EQ 2020-06-03
-#> 31      WIPRO     EQ       <NA>
-#> 32       ONGC     EQ 2020-03-23
-#> 33  POWERGRID     EQ       <NA>
-#> 34 TATAMOTORS     EQ       <NA>
-#> 35      TECHM     EQ       <NA>
-#> 36 HEROMOTOCO     EQ       <NA>
-#> 37       GAIL     EQ       <NA>
-#> 38 BHARTIARTL     EQ       <NA>
-#> 39        IOC     EQ 2020-03-23
-#> 40    DRREDDY     EQ       <NA>
-#> 41 BAJAJ-AUTO     EQ       <NA>
-#> 42 ASIANPAINT     EQ       <NA>
-#> 43 HINDUNILVR     EQ       <NA>
-#> 44  NESTLEIND     EQ 2020-06-11
-#> 45 ULTRACEMCO     EQ       <NA>
-#> 46    HCLTECH     EQ       <NA>
-#> 47   SHREECEM     EQ       <NA>
-#> 48  SUNPHARMA     EQ       <NA>
-#> 49  BRITANNIA     EQ       <NA>
-#> 50      CIPLA     EQ 2020-03-19
-#>                                                                  caAct      iep
-#> 1                                                                 <NA>  2452.00
-#> 2                                                                 <NA>   510.00
-#> 3                                                                 <NA>   404.90
-#> 4                                                                 <NA>   342.25
-#> 5                                  INTERIM DIVIDEND - RS 125 PER SHARE 17000.00
-#> 6                                                                 <NA>   170.60
-#> 7                                                                 <NA>   315.10
-#> 8                                                                 <NA>  5250.00
-#> 9                                                                 <NA>   189.00
-#> 10                                                                <NA>   149.90
-#> 11                                                                <NA>   598.00
-#> 12                                                                <NA>   416.00
-#> 13                                                                <NA>   975.00
-#> 14                                                                <NA>   105.00
-#> 15                                                                <NA>   178.00
-#> 16                               INTERIM DIVIDEND - RS 16.50 PER SHARE   369.80
-#> 17                                INTERIM DIVIDEND - RS 4.10 PER SHARE   228.30
-#> 18                                  INTERIM DIVIDEND - RS 10 PER SHARE   920.00
-#> 19                                                                <NA>  1276.00
-#> 20                                                                <NA>   347.00
-#> 21                                        DIVIDEND - RS 9.50 PER SHARE   702.00
-#> 22                                                                <NA>  5590.00
-#> 23                                                                <NA>   190.80
-#> 24                                                                <NA>  1785.00
-#> 25                                INTERIM DIVIDEND - RS 0.50 PER HSARE    94.95
-#> 26                                  INTERIM DIVIDEND - RS 12 PER SHARE   134.50
-#> 27                                                                <NA>   517.10
-#> 28                                       RIGHTS 1:15 @ PREMIUM RS 1247  1643.00
-#> 29                                                                <NA>   965.00
-#> 30                                           DIVIDEND - RS 6 PER SHARE  2065.00
-#> 31                                                                <NA>   217.45
-#> 32                                   INTERIM DIVIDEND - RS 5 PER SHARE    85.50
-#> 33                                                                <NA>   165.70
-#> 34                                                                <NA>   102.00
-#> 35                                                                <NA>   556.95
-#> 36                                                                <NA>  2380.00
-#> 37                                                                <NA>   101.00
-#> 38                                                                <NA>   558.00
-#> 39                                INTERIM DIVIDEND - RS 4.25 PER SHARE    87.35
-#> 40                                                                <NA>  4065.00
-#> 41                                                                <NA>  2764.00
-#> 42                                                                <NA>  1639.00
-#> 43                                                                <NA>  2109.80
-#> 44                   ANNUAL GENERAL MEETING/DIVIDEND - RS 61 PER SHARE 16598.00
-#> 45                                                                <NA>  3785.00
-#> 46                                                                <NA>   585.00
-#> 47                                                                <NA> 22291.70
-#> 48                                                                <NA>   489.40
-#> 49                                                                <NA>  3381.05
-#> 50 INTERIM DIVIDEND - RS 3 PER SHARE SPECIAL DIVIDEND - RE 1 PER SHARE   644.50
-#>       chn perChn     pCls trdQnty    iVal    mktCap    yHigh     yLow  sumVal
-#> 1  100.60   4.28  2351.40   34645  849.50  62251.71  4923.40  1783.00 8579.77
-#> 2   19.45   3.96   490.55   87145  444.44  29598.42  1596.55   235.55 8579.77
-#> 3   15.30   3.93   389.60   82484  333.98  87921.92   819.00   286.00 8579.77
-#> 4   11.15   3.37   331.10  103305  353.56 214300.53   552.20   268.30 8579.77
-#> 5  518.05   3.14 16481.95    1334  226.78  22951.66 23450.00 12450.10 8579.77
-#> 6    5.10   3.08   165.50   63744  108.75  15101.20   405.20   114.00 8579.77
-#> 7    8.90   2.91   306.20   47662  150.18  23110.38   516.45   250.85 8579.77
-#> 8  146.40   2.87  5103.60    1955  102.64  30862.58  9950.00  3985.30 8579.77
-#> 9    5.25   2.86   183.75   21678   40.97  18654.90   296.75   132.50 8579.77
-#> 10   4.10   2.81   145.80   53592   80.33  21285.94   221.20    84.90 8579.77
-#> 11  16.10   2.77   581.90    4635   27.72  22966.39   949.50   385.05 8579.77
-#> 12  11.00   2.72   405.00    9037   37.59  22279.57   709.05   240.15 8579.77
-#> 13  25.15   2.65   949.85   72578  707.64 411349.33  1305.50   738.75 8579.77
-#> 14   2.60   2.54   102.40   29821   31.31  18651.41   180.00    60.20 8579.77
-#> 15   4.30   2.48   173.70  146723  261.17  66658.82   373.80   149.45 8579.77
-#> 16   8.80   2.44   361.00    8342   30.85  28974.71   549.00   252.00 8579.77
-#> 17   5.40   2.42   222.90   11176   25.51  18964.77   296.50   120.05 8579.77
-#> 18  20.10   2.23   899.90    9943   91.48 111164.10  1591.65   661.00 8579.77
-#> 19  27.10   2.17  1248.90   17967  229.26 167193.56  1740.00  1001.00 8579.77
-#> 20   7.25   2.13   339.75    1929    6.69  26230.93   428.85   203.00 8579.77
-#> 21  14.45   2.10   687.55   18801  131.98 251824.91   847.00   509.25 8579.77
-#> 22 114.25   2.09  5475.75    1957  109.40  72781.06  7758.70  4001.10 8579.77
-#> 23   3.60   1.92   187.20   69007  131.67 163378.50   282.90   134.60 8579.77
-#> 24  33.35   1.90  1751.65   23492  419.33 302853.94  2499.90  1473.45 8579.77
-#> 25   1.75   1.88    93.20   14568   13.83  45186.46   145.85    73.20 8579.77
-#> 26   2.40   1.82   132.10   19565   26.31  27679.28   265.35   119.20 8579.77
-#> 27   8.95   1.76   508.15    8247   42.65  48643.08   675.30   245.40 8579.77
-#> 28  28.45   1.76  1614.55  104453 1716.16 521988.19  1626.95   866.98 8579.77
-#> 29  16.60   1.75   948.40    6232   60.14  39572.89  1389.95   720.90 8579.77
-#> 30  35.10   1.73  2029.90    7168  148.02 213275.04  2296.20  1506.05 8579.77
-#> 31   3.65   1.71   213.80   16235   35.30  31758.82   300.75   159.40 8579.77
-#> 32   1.40   1.66    84.10   18561   15.87  30682.04   173.45    50.00 8579.77
-#> 33   2.45   1.50   163.25    5665    9.39  41848.79   216.25   122.15 8579.77
-#> 34   1.50   1.49   100.50  748161  763.12  18005.63   201.70    63.50 8579.77
-#> 35   8.15   1.49   548.80    3646   20.31  33920.28   845.90   471.40 8579.77
-#> 36  31.85   1.36  2348.15    1464   34.84  30486.17  3022.90  1475.00 8579.77
-#> 37   1.35   1.35    99.65   64490   65.13  18426.86   157.38    65.00 8579.77
-#> 38   7.30   1.33   550.70   27889  155.62 123179.39   612.00   321.15 8579.77
-#> 39   1.15   1.33    86.20   35055   30.62  21910.51   159.70    71.15 8579.77
-#> 40  52.70   1.31  4012.30    1043   42.40  48668.84  4190.00  2351.20 8579.77
-#> 41  35.45   1.30  2728.55     874   24.16  35529.86  3315.15  1788.65 8579.77
-#> 42  20.80   1.29  1618.20    3330   54.58  72952.17  1916.70  1291.25 8579.77
-#> 43  25.50   1.22  2084.30    6396  134.94 148900.51  2614.30  1659.05 8579.77
-#> 44 197.70   1.21 16400.30     190   31.54  58506.13 18369.95 11265.00 8579.77
-#> 45  40.20   1.07  3744.80     679   25.70  43233.49  4754.10  2910.00 8579.77
-#> 46   6.05   1.04   578.95   10227   59.83  62843.06   623.50   375.25 8579.77
-#> 47 174.45   0.79 22117.25      40    8.92  29526.26 25355.00 15410.00 8579.77
-#> 48   3.60   0.74   485.80   12998   63.61  52451.86   512.70   312.00 8579.77
-#> 49  23.85   0.71  3357.20     883   29.85  39557.71  3708.00  2100.00 8579.77
-#> 50   0.85   0.13   643.65    5306   34.20  32692.80   669.75   355.30 8579.77
-#>    sumQnty finQnty sumfinQnty
-#> 1  1886681   34645    2046317
-#> 2  1886681   87145    2046317
-#> 3  1886681   82484    2046317
-#> 4  1886681  103305    2046317
-#> 5  1886681    1334    2046317
-#> 6  1886681   63744    2046317
-#> 7  1886681   47662    2046317
-#> 8  1886681    1955    2046317
-#> 9  1886681   21678    2046317
-#> 10 1886681   53592    2046317
-#> 11 1886681    4635    2046317
-#> 12 1886681    9037    2046317
-#> 13 1886681   72578    2046317
-#> 14 1886681   29821    2046317
-#> 15 1886681  146723    2046317
-#> 16 1886681    8342    2046317
-#> 17 1886681   11176    2046317
-#> 18 1886681    9943    2046317
-#> 19 1886681   17967    2046317
-#> 20 1886681    1929    2046317
-#> 21 1886681   18801    2046317
-#> 22 1886681    1957    2046317
-#> 23 1886681   69007    2046317
-#> 24 1886681   23492    2046317
-#> 25 1886681   14568    2046317
-#> 26 1886681   19565    2046317
-#> 27 1886681    8247    2046317
-#> 28 1886681  104453    2046317
-#> 29 1886681    6232    2046317
-#> 30 1886681    7168    2046317
-#> 31 1886681   16235    2046317
-#> 32 1886681   18561    2046317
-#> 33 1886681    5665    2046317
-#> 34 1886681  748161    2046317
-#> 35 1886681    3646    2046317
-#> 36 1886681    1464    2046317
-#> 37 1886681   64490    2046317
-#> 38 1886681   27889    2046317
-#> 39 1886681   35055    2046317
-#> 40 1886681    1043    2046317
-#> 41 1886681     874    2046317
-#> 42 1886681    3330    2046317
-#> 43 1886681    6396    2046317
-#> 44 1886681     190    2046317
-#> 45 1886681     679    2046317
-#> 46 1886681   10227    2046317
-#> 47 1886681      40    2046317
-#> 48 1886681   12998    2046317
-#> 49 1886681     883    2046317
-#> 50 1886681    5306    2046317
+#> 1          LT     EQ 2020-11-04
+#> 2    SHREECEM     EQ       <NA>
+#> 3  BAJFINANCE     EQ       <NA>
+#> 4         TCS     EQ 2020-11-26
+#> 5   POWERGRID     EQ 2020-09-02
+#> 6     HCLTECH     EQ 2020-10-22
+#> 7   SUNPHARMA     EQ       <NA>
+#> 8  HEROMOTOCO     EQ       <NA>
+#> 9  BHARTIARTL     EQ       <NA>
+#> 10  TATASTEEL     EQ       <NA>
+#> 11   HDFCBANK     EQ       <NA>
+#> 12     GRASIM     EQ       <NA>
+#> 13      TITAN     EQ       <NA>
+#> 14  KOTAKBANK     EQ       <NA>
+#> 15        ITC     EQ       <NA>
+#> 16  EICHERMOT     EQ       <NA>
+#> 17  COALINDIA     EQ 2020-11-19
+#> 18  ICICIBANK     EQ       <NA>
+#> 19    SBILIFE     EQ       <NA>
+#> 20      TECHM     EQ 2020-10-29
+#> 21 ADANIPORTS     EQ       <NA>
+#> 22   DIVISLAB     EQ 2020-09-04
+#> 23  NESTLEIND     EQ 2020-10-29
+#> 24   HDFCLIFE     EQ       <NA>
+#> 25       ONGC     EQ       <NA>
+#> 26       BPCL     EQ 2020-09-18
+#> 27       SBIN     EQ       <NA>
+#> 28   AXISBANK     EQ       <NA>
+#> 29       INFY     EQ 2020-10-23
+#> 30  BRITANNIA     EQ       <NA>
+#> 31   HINDALCO     EQ 2020-09-03
+#> 32     MARUTI     EQ       <NA>
+#> 33      CIPLA     EQ       <NA>
+#> 34      WIPRO     EQ       <NA>
+#> 35        M&M     EQ       <NA>
+#> 36   RELIANCE     EQ       <NA>
+#> 37 BAJAJFINSV     EQ       <NA>
+#> 38       HDFC     EQ       <NA>
+#> 39 ASIANPAINT     EQ 2020-10-28
+#> 40 INDUSINDBK     EQ       <NA>
+#> 41 HINDUNILVR     EQ 2020-10-28
+#> 42        IOC     EQ       <NA>
+#> 43 TATAMOTORS     EQ       <NA>
+#> 44    DRREDDY     EQ       <NA>
+#> 45   JSWSTEEL     EQ       <NA>
+#> 46 BAJAJ-AUTO     EQ       <NA>
+#> 47 ULTRACEMCO     EQ       <NA>
+#> 48       NTPC     EQ 2020-11-12
+#> 49       GAIL     EQ       <NA>
+#> 50        UPL     EQ       <NA>
+#>                                                  caAct      iep    chn perChn
+#> 1                   SPECIAL DIVIDEND - RS 18 PER SHARE  1130.00  14.00   1.25
+#> 2                                                 <NA> 23949.00 250.20   1.06
+#> 3                                                 <NA>  4655.00 -34.75  -0.74
+#> 4                                              BUYBACK  2686.00 -15.30  -0.57
+#> 5  ANNUAL GENERAL MEETING/DIVIDEND - RS 4.04 PER SHARE   195.15  -0.15  -0.08
+#> 6                    INTERIM DIVIDEND - RS 4 PER SHARE   824.10  -0.60  -0.07
+#> 7                                                 <NA>   506.00  -0.20  -0.04
+#> 8                                                 <NA>  3008.00  -0.75  -0.02
+#> 9                                                 <NA>   468.70   4.60   0.99
+#> 10                                                <NA>   546.00   4.75   0.88
+#> 11                                                <NA>  1415.00  12.20   0.87
+#> 12                                                <NA>   850.20   7.10   0.84
+#> 13                                                <NA>  1316.95  10.00   0.77
+#> 14                                                <NA>  1875.00  12.55   0.67
+#> 15                                                <NA>   195.10   1.25   0.64
+#> 16                                                <NA>  2610.00  14.90   0.57
+#> 17                INTERIM DIVIDEND - RS 7.50 PER SHARE   124.60   0.65   0.52
+#> 18                                                <NA>   475.10   2.40   0.51
+#> 19                                                <NA>   853.30   4.25   0.50
+#> 20                  SPECIAL DIVIDEND - RS 15 PER SHARE   866.50   4.25   0.49
+#> 21                                                <NA>   400.80   1.85   0.46
+#> 22                              ANNUAL GENERAL MEETING  3485.50  16.05   0.46
+#> 23                 INTERIM DIVIDNED - RS 135 PER SHARE 17599.00  78.80   0.45
+#> 24                                                <NA>   668.00   2.90   0.44
+#> 25                                                <NA>    81.15   0.35   0.43
+#> 26                              ANNUAL GENERAL MEETING   383.70   1.65   0.43
+#> 27                                                <NA>   244.00   1.00   0.41
+#> 28                                                <NA>   602.25   2.40   0.40
+#> 29                  INTERIM DIVIDEND - RS 12 PER SHARE  1119.95   4.30   0.39
+#> 30                                                <NA>  3569.80  14.00   0.39
+#> 31    ANNUAL GENERAL MEETING/DIVIDEND - RE 1 PER SHARE   224.20   0.75   0.34
+#> 32                                                <NA>  7080.00  24.30   0.34
+#> 33                                                <NA>   734.00   2.35   0.32
+#> 34                                                <NA>   351.00   1.00   0.29
+#> 35                                                <NA>   722.00   2.05   0.28
+#> 36                                                <NA>  1953.05   5.25   0.27
+#> 37                                                <NA>  8740.00  22.25   0.26
+#> 38                                                <NA>  2197.15   5.80   0.26
+#> 39                INTERIM DIVIDEND - RS 3.35 PER SHARE  2160.00   5.70   0.26
+#> 40                                                <NA>   857.00   1.95   0.23
+#> 41                  INTERIM DIVIDEND - RS 14 PER SHARE  2140.00   4.15   0.19
+#> 42                                                <NA>    85.90   0.15   0.17
+#> 43                                                <NA>   171.60   0.15   0.09
+#> 44                                                <NA>  4810.00   3.70   0.08
+#> 45                                                <NA>   338.50   0.25   0.07
+#> 46                                                <NA>  3053.00   1.75   0.06
+#> 47                                                <NA>  4822.00   2.15   0.04
+#> 48                                            BUY-BACK    93.95   0.00   0.00
+#> 49                                                <NA>   102.30   0.00   0.00
+#> 50                                                <NA>   418.60   0.00   0.00
+#>        pCls trdQnty    iVal    mktCap    yHigh     yLow  sumVal sumQnty finQnty
+#> 1   1116.00   19289  217.97 136320.55  1383.70   661.00 7699.46  801840   19289
+#> 2  23698.80     287   68.73  31637.61 25355.00 15410.00 7699.46  801840     287
+#> 3   4689.75    9881  459.96 124343.29  4923.40  1783.00 7699.46  801840    9881
+#> 4   2701.30   16492  442.98 283816.87  2885.00  1506.05 7699.46  801840   16492
+#> 5    195.30    9761   19.05  50064.74   211.00   122.15 7699.46  801840    9761
+#> 6    824.70    9991   82.34  89518.38   910.70   375.25 7699.46  801840    9991
+#> 7    506.20   37432  189.41  54654.45   564.75   312.00 7699.46  801840   37432
+#> 8   3008.75    3444  103.60  39064.76  3394.90  1475.00 7699.46  801840    3444
+#> 9    464.10   63368  297.01 111404.66   612.00   361.75 7699.46  801840   63368
+#> 10   541.25   25227  137.74  40850.73   558.65   250.85 7699.46  801840   25227
+#> 11  1402.80   28611  404.85 609863.14  1464.40   738.75 7699.46  801840   28611
+#> 12   843.10    1986   16.88  33281.96   873.80   385.05 7699.46  801840    1986
+#> 13  1306.95    2093   27.56  54533.73  1375.00   720.90 7699.46  801840    2093
+#> 14  1862.45   18038  338.21 272776.99  1948.40  1001.00 7699.46  801840   18038
+#> 15   193.85   69514  135.62 169354.31   250.40   134.60 7699.46  801840   69514
+#> 16  2595.10    1948   50.84  36160.71  2727.00  1245.01 7699.46  801840    1948
+#> 17   123.95   17902   22.31  25971.59   214.60   109.55 7699.46  801840   17902
+#> 18   472.70   16769   79.67 325973.71   552.20   268.30 7699.46  801840   16769
+#> 19   849.05    2001   17.07  33114.48  1020.00   519.40 7699.46  801840    2001
+#> 20   862.25    2274   19.70  53329.97   890.00   471.40 7699.46  801840    2274
+#> 21   398.95   18456   73.97  29180.43   404.70   203.00 7699.46  801840   18456
+#> 22  3469.45     807   28.13  44209.44  3637.80  1626.00 7699.46  801840     807
+#> 23 17520.20      69   12.14  62501.24 18369.95 12200.00 7699.46  801840      69
+#> 24   665.10    6376   42.59  52379.37   688.50   340.00 7699.46  801840    6376
+#> 25    80.80  167432  135.87  29478.11   133.55    50.00 7699.46  801840  167432
+#> 26   382.05    9503   36.46  30664.23   518.45   252.00 7699.46  801840    9503
+#> 27   243.00   94976  231.74  93253.27   351.00   149.45 7699.46  801840   94976
+#> 28   599.85   28166  169.63 148682.98   765.85   286.00 7699.46  801840   28166
+#> 29  1115.65   13759  154.09 408671.51  1186.00   509.25 7699.46  801840   13759
+#> 30  3555.80     415   14.81  41942.64  4010.00  2100.00 7699.46  801840     415
+#> 31   223.45   15877   35.60  32625.60   230.00    84.90 7699.46  801840   15877
+#> 32  7055.70     904   64.00  93781.00  7569.90  4001.10 7699.46  801840     904
+#> 33   731.65   12181   89.41  37167.09   829.05   355.30 7699.46  801840   12181
+#> 34   350.00   15438   54.19  52001.86   381.70   159.40 7699.46  801840   15438
+#> 35   719.95    4594   33.17  68917.81   745.50   245.40 7699.46  801840    4594
+#> 36  1947.80   99446 1942.23 629743.11  2369.35   866.98 7699.46  801840   99446
+#> 37  8717.75    3491  305.11  52718.13  9950.00  3985.30 7699.46  801840    3491
+#> 38  2191.35   15660  344.07 392537.68  2499.90  1473.45 7699.46  801840   15660
+#> 39  2154.30    2802   60.52  97120.79  2249.00  1431.20 7699.46  801840    2802
+#> 40   855.05   21933  187.97  48501.43  1596.55   235.55 7699.46  801840   21933
+#> 41  2135.85    1990   42.59 190695.39  2614.30  1757.30 7699.46  801840    1990
+#> 42    85.75   33525   28.80  21796.13   133.70    71.15 7699.46  801840   33525
+#> 43   171.45  109920  188.62  30717.07   201.70    63.50 7699.46  801840  109920
+#> 44  4806.30    2886  138.82  58332.21  5512.65  2495.05 7699.46  801840    2886
+#> 45   338.25    5162   17.47  33522.62   350.50   132.50 7699.46  801840    5162
+#> 46  3051.25     693   21.16  39731.90  3315.15  1788.65 7699.46  801840     693
+#> 47  4819.85     306   14.76  55645.38  4979.00  2910.00 7699.46  801840     306
+#> 48    93.95   33252   31.24  45550.09   125.00    73.20 7699.46  801840   33252
+#> 49   102.30   33779   34.56  18916.89   133.35    65.00 7699.46  801840   33779
+#> 50   418.60    8181   34.25  23027.72   614.90   240.15 7699.46  801840    8181
+#>    sumfinQnty
+#> 1     1118287
+#> 2     1118287
+#> 3     1118287
+#> 4     1118287
+#> 5     1118287
+#> 6     1118287
+#> 7     1118287
+#> 8     1118287
+#> 9     1118287
+#> 10    1118287
+#> 11    1118287
+#> 12    1118287
+#> 13    1118287
+#> 14    1118287
+#> 15    1118287
+#> 16    1118287
+#> 17    1118287
+#> 18    1118287
+#> 19    1118287
+#> 20    1118287
+#> 21    1118287
+#> 22    1118287
+#> 23    1118287
+#> 24    1118287
+#> 25    1118287
+#> 26    1118287
+#> 27    1118287
+#> 28    1118287
+#> 29    1118287
+#> 30    1118287
+#> 31    1118287
+#> 32    1118287
+#> 33    1118287
+#> 34    1118287
+#> 35    1118287
+#> 36    1118287
+#> 37    1118287
+#> 38    1118287
+#> 39    1118287
+#> 40    1118287
+#> 41    1118287
+#> 42    1118287
+#> 43    1118287
+#> 44    1118287
+#> 45    1118287
+#> 46    1118287
+#> 47    1118287
+#> 48    1118287
+#> 49    1118287
+#> 50    1118287
 ```
 
 ### Advances & Declines
@@ -927,122 +1151,136 @@ nse_preopen_nifty(clean_names = FALSE)
 ``` r
 nse_advances_declines()
 #>                                     index_name advances declines unchanged
-#> 1                                     NIFTY 50       24       26         0
-#> 2                                NIFTY NEXT 50       22       28         0
-#> 3                                     NIFTY IT        4        6         0
-#> 4                                   NIFTY BANK        5        7         0
-#> 5                              NIFTY MIDCAP 50       25       25         0
-#> 6                                  NIFTY INFRA       11       19         0
-#> 7                                 NIFTY REALTY        2        8         0
-#> 8                                 NIFTY ENERGY        2        8         0
-#> 9                                   NIFTY FMCG        5       10         0
-#> 10                                   NIFTY MNC        7       23         0
-#> 11                                NIFTY PHARMA        2        8         0
-#> 12                                   NIFTY PSE        8       12         0
-#> 13                              NIFTY PSU BANK        3       10         0
-#> 14                           NIFTY SERV SECTOR       16       14         0
-#> 15                           NIFTY COMMODITIES       17       13         0
-#> 16                           NIFTY CONSUMPTION       15       15         0
-#> 17                           NIFTY FIN SERVICE       13        7         0
-#> 18                                  NIFTY AUTO        8        7         0
-#> 19                           NIFTY DIV OPPS 50       19       31         0
-#> 20                                 NIFTY MEDIA        9        5         0
-#> 21                                 NIFTY METAL        9        5         1
-#> 22                             NIFTY100 LIQ 15        6        9         0
-#> 23                                  NIFTY CPSE        5        6         1
-#> 24                           NIFTY GROWSECT 15        9        6         0
-#> 25                            NIFTY50 VALUE 20        7       13         0
-#> 26                           NIFTY100 QUALTY30       16       14         0
-#> 27                              NIFTY PVT BANK        5        5         0
-#> 28                            NIFTY MID LIQ 15        9        6         0
-#> 29                                   NIFTY 100       46       55         0
-#> 30                                   NIFTY 200       92      109         0
-#> 31                                   NIFTY 500      201      293         7
-#> 32                            NIFTY MIDCAP 100       46       54         0
-#> 33                            NIFTY SMLCAP 100       34       66         0
-#> 34                    NIFTY ADITYA BIRLA GROUP        3        4         0
-#> 35                              NIFTY ALPHA 50       24       25         1
-#> 36                          NIFTY HIGH BETA 50       21       29         0
-#> 37                     NIFTY LOW VOLATILITY 50       22       28         0
-#> 38                        NIFTY MAHINDRA GROUP        5        3         0
-#> 39                            NIFTY MIDCAP 150       69       77         4
-#> 40                       NIFTY MIDSMALLCAP 400      155      238         7
-#> 41                            NIFTY SHARIAH 25       13       12         0
-#> 42                          NIFTY SMALLCAP 250       86      161         3
-#> 43                           NIFTY SMALLCAP 50       12       38         0
-#> 44                            NIFTY TATA GROUP        7       15         0
-#> 45                    NIFTY TATA GROUP 25% CAP        4        6         0
-#> 46                            NIFTY100 EQL WGT       46       55         0
-#> 47                           NIFTY100 LOWVOL30       12       18         0
-#> 48                             NIFTY50 SHARIAH       11        8         0
-#> 49                            NIFTY500 SHARIAH       85      130         2
-#> 50                             NIFTY50 EQL WGT       24       26         0
-#> 51               NIFTY ALPHA LOW-VOLATILITY 30       14       16         0
-#> 52             NIFTY QUALITY LOW-VOLATILITY 30       16       14         0
-#> 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       16       14         0
-#> 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       12       18         0
-#> 55                       NIFTY LARGEMIDCAP 250      115      132         4
-#> 56                           NIFTY500 VALUE 50       19       31         0
-#> 57                          CNX NIFTY Pre Open       50        0         0
+#> 1                                     NIFTY 50       42        8         0
+#> 2                                NIFTY NEXT 50       38       12         0
+#> 3                                     NIFTY IT        8        2         0
+#> 4                                   NIFTY BANK        9        3         0
+#> 5                              NIFTY MIDCAP 50       41        9         0
+#> 6                                  NIFTY INFRA       22        8         0
+#> 7                                 NIFTY REALTY        6        2         2
+#> 8                                 NIFTY ENERGY        6        4         0
+#> 9                                   NIFTY FMCG       14        1         0
+#> 10                                   NIFTY MNC       19       11         0
+#> 11                                NIFTY PHARMA       10        0         0
+#> 12                                   NIFTY PSE       15        5         0
+#> 13                              NIFTY PSU BANK        8        2         2
+#> 14                           NIFTY SERV SECTOR       24        6         0
+#> 15                           NIFTY COMMODITIES       23        7         0
+#> 16                           NIFTY CONSUMPTION       24        6         0
+#> 17                           NIFTY FIN SERVICE       18        2         0
+#> 18                                  NIFTY AUTO        9        6         0
+#> 19                           NIFTY DIV OPPS 50       38       12         0
+#> 20                                 NIFTY MEDIA        8        2         0
+#> 21                                 NIFTY METAL       13        2         0
+#> 22                             NIFTY100 LIQ 15       11        4         0
+#> 23                                  NIFTY CPSE       10        2         0
+#> 24                           NIFTY GROWSECT 15       13        2         0
+#> 25                            NIFTY50 VALUE 20       16        4         0
+#> 26                           NIFTY100 QUALTY30       23        7         0
+#> 27                              NIFTY PVT BANK        6        4         0
+#> 28                            NIFTY MID LIQ 15       10        5         0
+#> 29                                   NIFTY 100       80       20         0
+#> 30                                   NIFTY 200      148       52         0
+#> 31                                   NIFTY 500      343      154         4
+#> 32                            NIFTY MIDCAP 100       68       32         0
+#> 33                            NIFTY SMLCAP 100       69       31         0
+#> 34                    NIFTY ADITYA BIRLA GROUP        5        2         0
+#> 35                              NIFTY ALPHA 50       32       18         0
+#> 36                          NIFTY HIGH BETA 50       39       11         0
+#> 37                     NIFTY LOW VOLATILITY 50       41        9         0
+#> 38                        NIFTY MAHINDRA GROUP        6        3         0
+#> 39                            NIFTY MIDCAP 150       96       53         1
+#> 40                       NIFTY MIDSMALLCAP 400      262      134         4
+#> 41                            NIFTY SHARIAH 25       20        5         0
+#> 42                          NIFTY SMALLCAP 250      166       81         3
+#> 43                           NIFTY SMALLCAP 50       34       16         0
+#> 44                            NIFTY TATA GROUP       18        7         0
+#> 45                    NIFTY TATA GROUP 25% CAP        9        1         0
+#> 46                            NIFTY100 EQL WGT       80       20         0
+#> 47                           NIFTY100 LOWVOL30       27        3         0
+#> 48                             NIFTY50 SHARIAH       16        2         0
+#> 49                            NIFTY500 SHARIAH      142       68         0
+#> 50                             NIFTY50 EQL WGT       42        8         0
+#> 51               NIFTY ALPHA LOW-VOLATILITY 30       26        4         0
+#> 52             NIFTY QUALITY LOW-VOLATILITY 30       25        5         0
+#> 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       25        5         0
+#> 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       27        3         0
+#> 55                            NIFTY SME EMERGE       22       16        51
+#> 56                       NIFTY LARGEMIDCAP 250      176       73         1
+#> 57                           NIFTY500 VALUE 50       37       13         0
+#> 58                            NIFTY MIDCAP 150       96       53         1
+#> 59                             NIFTY SMLCAP 50       34       16         0
+#> 60                            NIFTY SMLCAP 250      166       81         3
+#> 61                            NIFTY MIDSML 400      262      134         4
+#> 62                           NIFTY200 QUALTY30       24        6         0
+#> 63                           NIFTY FINSRV25 50       18        2         0
+#> 64                          CNX NIFTY Pre Open       41        6         3
 
 # retain original column names as returned by NSE
 nse_advances_declines(clean_names = FALSE)
 #>                                        skipped advances declines unchanged
-#> 1                                     NIFTY 50       24       26         0
-#> 2                                NIFTY NEXT 50       22       28         0
-#> 3                                     NIFTY IT        4        6         0
-#> 4                                   NIFTY BANK        5        7         0
-#> 5                              NIFTY MIDCAP 50       25       25         0
-#> 6                                  NIFTY INFRA       11       19         0
-#> 7                                 NIFTY REALTY        2        8         0
-#> 8                                 NIFTY ENERGY        2        8         0
-#> 9                                   NIFTY FMCG        5       10         0
-#> 10                                   NIFTY MNC        7       23         0
-#> 11                                NIFTY PHARMA        2        8         0
-#> 12                                   NIFTY PSE        8       12         0
-#> 13                              NIFTY PSU BANK        3       10         0
-#> 14                           NIFTY SERV SECTOR       16       14         0
-#> 15                           NIFTY COMMODITIES       17       13         0
-#> 16                           NIFTY CONSUMPTION       15       15         0
-#> 17                           NIFTY FIN SERVICE       13        7         0
-#> 18                                  NIFTY AUTO        8        7         0
-#> 19                           NIFTY DIV OPPS 50       19       31         0
-#> 20                                 NIFTY MEDIA        9        5         0
-#> 21                                 NIFTY METAL        9        5         1
-#> 22                             NIFTY100 LIQ 15        6        9         0
-#> 23                                  NIFTY CPSE        5        6         1
-#> 24                           NIFTY GROWSECT 15        9        6         0
-#> 25                            NIFTY50 VALUE 20        7       13         0
-#> 26                           NIFTY100 QUALTY30       16       14         0
-#> 27                              NIFTY PVT BANK        5        5         0
-#> 28                            NIFTY MID LIQ 15        9        6         0
-#> 29                                   NIFTY 100       46       55         0
-#> 30                                   NIFTY 200       92      109         0
-#> 31                                   NIFTY 500      201      293         7
-#> 32                            NIFTY MIDCAP 100       46       54         0
-#> 33                            NIFTY SMLCAP 100       34       66         0
-#> 34                    NIFTY ADITYA BIRLA GROUP        3        4         0
-#> 35                              NIFTY ALPHA 50       24       25         1
-#> 36                          NIFTY HIGH BETA 50       21       29         0
-#> 37                     NIFTY LOW VOLATILITY 50       22       28         0
-#> 38                        NIFTY MAHINDRA GROUP        5        3         0
-#> 39                            NIFTY MIDCAP 150       69       77         4
-#> 40                       NIFTY MIDSMALLCAP 400      155      238         7
-#> 41                            NIFTY SHARIAH 25       13       12         0
-#> 42                          NIFTY SMALLCAP 250       86      161         3
-#> 43                           NIFTY SMALLCAP 50       12       38         0
-#> 44                            NIFTY TATA GROUP        7       15         0
-#> 45                    NIFTY TATA GROUP 25% CAP        4        6         0
-#> 46                            NIFTY100 EQL WGT       46       55         0
-#> 47                           NIFTY100 LOWVOL30       12       18         0
-#> 48                             NIFTY50 SHARIAH       11        8         0
-#> 49                            NIFTY500 SHARIAH       85      130         2
-#> 50                             NIFTY50 EQL WGT       24       26         0
-#> 51               NIFTY ALPHA LOW-VOLATILITY 30       14       16         0
-#> 52             NIFTY QUALITY LOW-VOLATILITY 30       16       14         0
-#> 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       16       14         0
-#> 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       12       18         0
-#> 55                       NIFTY LARGEMIDCAP 250      115      132         4
-#> 56                           NIFTY500 VALUE 50       19       31         0
-#> 57                          CNX NIFTY Pre Open       50        0         0
+#> 1                                     NIFTY 50       42        8         0
+#> 2                                NIFTY NEXT 50       38       12         0
+#> 3                                     NIFTY IT        8        2         0
+#> 4                                   NIFTY BANK        9        3         0
+#> 5                              NIFTY MIDCAP 50       41        9         0
+#> 6                                  NIFTY INFRA       22        8         0
+#> 7                                 NIFTY REALTY        6        2         2
+#> 8                                 NIFTY ENERGY        6        4         0
+#> 9                                   NIFTY FMCG       14        1         0
+#> 10                                   NIFTY MNC       19       11         0
+#> 11                                NIFTY PHARMA       10        0         0
+#> 12                                   NIFTY PSE       15        5         0
+#> 13                              NIFTY PSU BANK        8        2         2
+#> 14                           NIFTY SERV SECTOR       24        6         0
+#> 15                           NIFTY COMMODITIES       23        7         0
+#> 16                           NIFTY CONSUMPTION       24        6         0
+#> 17                           NIFTY FIN SERVICE       18        2         0
+#> 18                                  NIFTY AUTO        9        6         0
+#> 19                           NIFTY DIV OPPS 50       38       12         0
+#> 20                                 NIFTY MEDIA        8        2         0
+#> 21                                 NIFTY METAL       13        2         0
+#> 22                             NIFTY100 LIQ 15       11        4         0
+#> 23                                  NIFTY CPSE       10        2         0
+#> 24                           NIFTY GROWSECT 15       13        2         0
+#> 25                            NIFTY50 VALUE 20       16        4         0
+#> 26                           NIFTY100 QUALTY30       23        7         0
+#> 27                              NIFTY PVT BANK        6        4         0
+#> 28                            NIFTY MID LIQ 15       10        5         0
+#> 29                                   NIFTY 100       80       20         0
+#> 30                                   NIFTY 200      148       52         0
+#> 31                                   NIFTY 500      343      154         4
+#> 32                            NIFTY MIDCAP 100       68       32         0
+#> 33                            NIFTY SMLCAP 100       69       31         0
+#> 34                    NIFTY ADITYA BIRLA GROUP        5        2         0
+#> 35                              NIFTY ALPHA 50       32       18         0
+#> 36                          NIFTY HIGH BETA 50       39       11         0
+#> 37                     NIFTY LOW VOLATILITY 50       41        9         0
+#> 38                        NIFTY MAHINDRA GROUP        6        3         0
+#> 39                            NIFTY MIDCAP 150       96       53         1
+#> 40                       NIFTY MIDSMALLCAP 400      262      134         4
+#> 41                            NIFTY SHARIAH 25       20        5         0
+#> 42                          NIFTY SMALLCAP 250      166       81         3
+#> 43                           NIFTY SMALLCAP 50       34       16         0
+#> 44                            NIFTY TATA GROUP       18        7         0
+#> 45                    NIFTY TATA GROUP 25% CAP        9        1         0
+#> 46                            NIFTY100 EQL WGT       80       20         0
+#> 47                           NIFTY100 LOWVOL30       27        3         0
+#> 48                             NIFTY50 SHARIAH       16        2         0
+#> 49                            NIFTY500 SHARIAH      142       68         0
+#> 50                             NIFTY50 EQL WGT       42        8         0
+#> 51               NIFTY ALPHA LOW-VOLATILITY 30       26        4         0
+#> 52             NIFTY QUALITY LOW-VOLATILITY 30       25        5         0
+#> 53       NIFTY ALPHA QUALITY LOW-VOLATILITY 30       25        5         0
+#> 54 NIFTY ALPHA QUALITY VALUE LOW-VOLATILITY 30       27        3         0
+#> 55                            NIFTY SME EMERGE       22       16        51
+#> 56                       NIFTY LARGEMIDCAP 250      176       73         1
+#> 57                           NIFTY500 VALUE 50       37       13         0
+#> 58                            NIFTY MIDCAP 150       96       53         1
+#> 59                             NIFTY SMLCAP 50       34       16         0
+#> 60                            NIFTY SMLCAP 250      166       81         3
+#> 61                            NIFTY MIDSML 400      262      134         4
+#> 62                           NIFTY200 QUALTY30       24        6         0
+#> 63                           NIFTY FINSRV25 50       18        2         0
+#> 64                          CNX NIFTY Pre Open       41        6         3
 ```
