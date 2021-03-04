@@ -245,20 +245,24 @@ nse_stock_top_losers <- function(clean_names = TRUE) {
 
 #' Stock quote
 #'
-#' Fetch the quote for a given stock code.
+#' Fetch the quote for a given stock code from Yahoo Finance API or Rediff Money.
 #'
 #' @param stock_code Symbol of the stock.
+#' @param source Yahoo Finance API or Rediff Money.
 #'
 #' @examples
 #' \donttest{
 #' nse_stock_quote("infy")
+#' nse_stock_quote("infy", source = "rediff")
 #' }
+#'
+#' @importFrom httr GET http_status
 #'
 #' @export
 #'
-nse_stock_quote <- function(stock_code) {
+nse_stock_quote <- function(stock_code, source = c("yahoo", "rediff")) {
 
-  base_url <- "https://www.nseindia.com/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp"
+  source_type <- match.arg(source)
 
   if (nse_stock_valid(stock_code)) {
 
@@ -272,15 +276,12 @@ nse_stock_quote <- function(stock_code) {
       stock_code <- paste0(split_code[1], "%", charToRaw(pos_sym), split_code[2])
     }
 
-    base_url %>%
-      paste0("?symbol=") %>%
-      paste0(toupper(stock_code)) %>%
-      xml2::read_html() %>%
-      rvest::html_nodes("#responseDiv") %>%
-      rvest::html_text() %>%
-      jsonlite::fromJSON() %>%
-      magrittr::use_series(data) %>%
-      as.list()
+    if (source_type == "yahoo") {
+      nse_stock_quote_yahoo(stock_code)
+    } else {
+      nse_stock_quote_rediff(stock_code)
+    }
+
 
   } else {
 
@@ -289,6 +290,3 @@ nse_stock_quote <- function(stock_code) {
   }
 
 }
-
-
-
